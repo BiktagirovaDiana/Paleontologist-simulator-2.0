@@ -7,6 +7,7 @@ Expedition_1::Expedition_1(): Pterodactyl(95, 550), Tyrannosaurus(1610, 270), Ma
 	BackgroundTexture.loadFromFile("Background_Expedition_1.png");
 	BackgroundSprite.setTexture(BackgroundTexture);
 
+	TransitionBase = sf::FloatRect(800, 0, 300, 20);
 	
 }
 void Expedition_1::handleEvent(sf::Event& event) 
@@ -33,6 +34,11 @@ void Expedition_1::update(float time)
 
 	Neanderthal.Update(time);
 	Neanderthal.UpdateTrigger(Player.getSprite());
+
+	if (TransitionBase.contains(Player.getPosition()))
+	{
+		CheckBase = true;
+	}
 }
 void Expedition_1::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
 {

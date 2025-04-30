@@ -20,5 +20,7 @@ private:
 
     sf::Texture BackgroundTexture;
     sf::Sprite BackgroundSprite;
+
+    sf::FloatRect TransitionExpedition1;
     
 };

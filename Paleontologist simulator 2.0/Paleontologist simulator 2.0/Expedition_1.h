@@ -28,4 +28,6 @@ private:
     Tyrannosaurus Tyrannosaurus;
     Mammoth Mammoth;
     Neanderthal Neanderthal;
+
+    sf::FloatRect TransitionBase;
 };

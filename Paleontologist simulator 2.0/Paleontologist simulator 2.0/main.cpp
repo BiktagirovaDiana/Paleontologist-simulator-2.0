@@ -33,13 +33,17 @@ int EndurancePickaxe = 100;
 int EnduranceShovel = 100;
 int EnduranceBrush = 100; 
 
+bool CheckBase = false;
+bool CheckExpedition1 = false;
+
+
 enum class GameState { Base, Expedition_1 };
 
 
 int main()
 {
 
-	sf::RenderWindow window(sf::VideoMode(1920, 1080), "Paleontologist simulator", sf::Style::Default);
+	sf::RenderWindow window(sf::VideoMode(1920, 1050), "Paleontologist simulator", sf::Style::Default);
 	window.setFramerateLimit(30);
 	//sf::View view = window.getDefaultView();
 	// 
@@ -83,6 +87,18 @@ int main()
 					State = GameState::Expedition_1;
 					currentScene = std::make_unique<Expedition_1>();
 				}
+			}
+			if (CheckExpedition1 == true) 
+			{
+				State = GameState::Expedition_1;
+				currentScene = std::make_unique<Expedition_1>();
+				CheckExpedition1 = false;
+			}
+			if (CheckBase == true)
+			{
+				State = GameState::Base;
+				currentScene = std::make_unique<Base>();
+				CheckBase = false;
 			}
 
 			currentScene->handleEvent(ev);

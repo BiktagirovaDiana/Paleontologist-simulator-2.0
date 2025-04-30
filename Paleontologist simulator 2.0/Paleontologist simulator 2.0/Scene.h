@@ -1,6 +1,9 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
+extern bool CheckBase;
+extern bool CheckExpedition1;
+
 class Scene {
 public:
     virtual ~Scene() = default;
