@@ -146,6 +146,7 @@
     <ClCompile Include="Neanderthal.cpp" />
     <ClCompile Include="PlayerController.cpp" />
     <ClCompile Include="Pterodactyl.cpp" />
+    <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Shop.cpp" />
     <ClCompile Include="Tyrannosaurus.cpp" />
     <ClCompile Include="UI.cpp" />
@@ -159,6 +160,7 @@
     <ClInclude Include="Neanderthal.h" />
     <ClInclude Include="PlayerController.h" />
     <ClInclude Include="Pterodactyl.h" />
+    <ClInclude Include="Scene.h" />
     <ClInclude Include="Shop.h" />
     <ClInclude Include="Tyrannosaurus.h" />
     <ClInclude Include="UI.h" />

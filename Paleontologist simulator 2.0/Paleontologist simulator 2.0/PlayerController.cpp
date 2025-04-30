@@ -18,10 +18,6 @@ sf::Vector2f PlayerController::getPosition() const
     return PlayerSprite.getPosition();
 }
 
-sf::FloatRect PlayerController::getGlobalBounds() const 
-{
-    return PlayerSprite.getGlobalBounds();
-}
 float speedAnim = 35;
 
 void PlayerController::PlayerMovement(sf::Event& ev, float time)

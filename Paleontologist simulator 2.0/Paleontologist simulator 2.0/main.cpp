@@ -13,6 +13,8 @@
 #include "UI.h"
 #include "Inventory.h"
 
+#include "Base.h"
+#include "Expedition_1.h"
 
 #include "Pterodactyl.h"
 #include "Tyrannosaurus.h"
@@ -31,7 +33,7 @@ int EndurancePickaxe = 100;
 int EnduranceShovel = 100;
 int EnduranceBrush = 100; 
 
-//enum class GameState { Base, Expedition_1 };
+enum class GameState { Base, Expedition_1 };
 
 
 int main()
@@ -43,12 +45,13 @@ int main()
 	// 
 	//Defaulf - закрытие и увеличение окна, надпись и т.д.
 
+	GameState State = GameState::Base;
+	std::unique_ptr<Scene> currentScene = std::make_unique<Base>();
+
 	sf::View GameView = window.getDefaultView(); //Игровой мир
 	sf::View UIView = window.getDefaultView(); //Интерфейс
 
-	sf::Texture BackgroundTexture;
-	BackgroundTexture.loadFromFile("Background_Base.png");
-	sf::Sprite BackgroundSprite(BackgroundTexture);
+	
 
 
 	sf::Event ev; //для отслеживания действий игрока
@@ -58,7 +61,6 @@ int main()
 
 	
 	PlayerController Player;
-
 	UI Text;
 	Pterodactyl Fossil1(95, 550);
 	Tyrannosaurus Fossil2(1610, 270);
@@ -71,27 +73,6 @@ int main()
 	while (window.isOpen())
 	{
 		float time = Clock.restart().asSeconds();
-
-		GameView.setCenter(Player.getPosition());
-
-		sf::FloatRect backgroundBounds(0, 0,
-			BackgroundTexture.getSize().x,
-			BackgroundTexture.getSize().y);
-		sf::Vector2f cameraCenter = GameView.getCenter();
-		sf::Vector2f cameraSize = GameView.getSize();
-
-		if (cameraCenter.x - cameraSize.x / 2 < backgroundBounds.left)
-			cameraCenter.x = backgroundBounds.left + cameraSize.x / 2;
-		if (cameraCenter.y - cameraSize.y / 2 < backgroundBounds.top)
-			cameraCenter.y = backgroundBounds.top + cameraSize.y / 2;
-		if (cameraCenter.x + cameraSize.x / 2 > backgroundBounds.left + backgroundBounds.width)
-			cameraCenter.x = backgroundBounds.left + backgroundBounds.width - cameraSize.x / 2;
-		if (cameraCenter.y + cameraSize.y / 2 > backgroundBounds.top + backgroundBounds.height)
-			cameraCenter.y = backgroundBounds.top + backgroundBounds.height - cameraSize.y / 2;
-
-		GameView.setCenter(cameraCenter);
-
-
 
 
 		while (window.pollEvent(ev))
@@ -106,51 +87,67 @@ int main()
 			}
 			Player.PlayerMovement(ev, time);
 
-			Fossil1.ToolsControl(ev, time) ;
+			/*Fossil1.ToolsControl(ev, time) ;
 			Fossil2.ToolsControl(ev, time);
 			Fossil3.ToolsControl(ev, time);
-			Fossil4.ToolsControl(ev, time);
+			Fossil4.ToolsControl(ev, time);*/
+
+			if (ev.type == sf::Event::KeyPressed) {
+				if (ev.key.code == sf::Keyboard::P) {
+					State = GameState::Base;
+					currentScene = std::make_unique<Base>();
+				}
+				else if (ev.key.code == sf::Keyboard::L) {
+					State = GameState::Expedition_1;
+					currentScene = std::make_unique<Expedition_1>();
+				}
+			}
+
+			currentScene->handleEvent(ev);
 			
 		}
-
-
-
-		Player.Update(time);
-
+		
+		currentScene->update(time);
 		window.clear();
-		window.setView(GameView);
-
-		window.draw(BackgroundSprite);
-
-		Fossil1.Update(time);
-		Fossil1.UpdateTrigger(Player.getSprite());
-
-		Fossil2.Update(time);
-		Fossil2.UpdateTrigger(Player.getSprite());
-
-		Fossil3.Update(time);
-		Fossil3.UpdateTrigger(Player.getSprite());
-
-		Fossil4.Update(time);
-		Fossil4.UpdateTrigger(Player.getSprite());
-
-		
-
-		Fossil1.draw(window);
-		Fossil2.draw(window);
-		Fossil3.draw(window);
-		Fossil4.draw(window);
-
-		Player.draw(window);
-
-		//Отрисовка интерфейса
-		window.setView(UIView);
-		Text.draw(window);
-		Text.draw(window);
-		
-		
+		currentScene->draw(window,GameView);
 		window.display();
 
+		//Player.Update(time);
+
+		//window.clear();
+		//window.setView(GameView);
+
+
+		//window.draw(BackgroundSprite);
+
+		//Fossil1.Update(time);
+		//Fossil1.UpdateTrigger(Player.getSprite());
+
+		//Fossil2.Update(time);
+		//Fossil2.UpdateTrigger(Player.getSprite());
+
+		//Fossil3.Update(time);
+		//Fossil3.UpdateTrigger(Player.getSprite());
+
+		//Fossil4.Update(time);
+		//Fossil4.UpdateTrigger(Player.getSprite());
+
+		//
+
+		//Fossil1.draw(window);
+		//Fossil2.draw(window);
+		//Fossil3.draw(window);
+		//Fossil4.draw(window);
+
+		//Player.draw(window);
+
+		////Отрисовка интерфейса
+		//window.setView(UIView);
+		//Text.draw(window);
+		//Text.draw(window);
+		//
+		//
+		//window.display();
 
 	}
 }

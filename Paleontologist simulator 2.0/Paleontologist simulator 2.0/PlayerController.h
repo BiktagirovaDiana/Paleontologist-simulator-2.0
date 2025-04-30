@@ -14,7 +14,6 @@ public:
 	
 
 	sf::Vector2f getPosition() const; //Для передачи спрайта в Fossils
-	sf::FloatRect getGlobalBounds() const; //Для камеры
 
 	const sf::Sprite& getSprite() const 
 	{

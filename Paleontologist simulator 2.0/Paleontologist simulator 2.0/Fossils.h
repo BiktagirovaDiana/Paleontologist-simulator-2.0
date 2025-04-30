@@ -97,7 +97,7 @@ protected:
 	//вызывать при нажатии на кнопку R
 	void Excavation()
 	{
-		if (LevelSatiety > 1) 
+		if (LevelSatiety > 0) 
 		{
 			if (ImmersionLevel == 4) //Проверяем уровень
 			{
