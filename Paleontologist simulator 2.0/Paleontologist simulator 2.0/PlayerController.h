@@ -6,7 +6,7 @@ class PlayerController
 public:
 	PlayerController();
 
-	void PlayerMovement(sf::Event& ev, float time);
+	void PlayerMovement(sf::Event& ev);
 	
 	void Update(float time);
 

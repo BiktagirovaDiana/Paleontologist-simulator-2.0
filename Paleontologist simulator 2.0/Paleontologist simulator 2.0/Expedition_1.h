@@ -4,16 +4,28 @@
 #include "PlayerController.h"
 #include "UI.h"
 
+#include "Fossils.h"
+#include "Pterodactyl.h"
+#include "Tyrannosaurus.h"
+#include "Mammoth.h"
+#include "Neanderthal.h"
+
 class Expedition_1 : public Scene {
 public:
     Expedition_1();
     void handleEvent(sf::Event& event) override;
     void update(float deltaTime) override;
-    void draw(sf::RenderWindow& window, sf::View GameView) override;
+    void draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView) override;
 
 private:
-    PlayerController Player;
-    UI Text;
     sf::Texture BackgroundTexture;
     sf::Sprite BackgroundSprite;
+
+    PlayerController Player;
+    UI Text;
+ 
+    Pterodactyl Pterodactyl;
+    Tyrannosaurus Tyrannosaurus;
+    Mammoth Mammoth;
+    Neanderthal Neanderthal;
 };

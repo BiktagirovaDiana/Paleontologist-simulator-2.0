@@ -20,7 +20,7 @@ sf::Vector2f PlayerController::getPosition() const
 
 float speedAnim = 35;
 
-void PlayerController::PlayerMovement(sf::Event& ev, float time)
+void PlayerController::PlayerMovement(sf::Event& ev)
 {
     if (ev.type == sf::Event::KeyPressed) {
         
@@ -45,7 +45,8 @@ void PlayerController::PlayerMovement(sf::Event& ev, float time)
             Anim = true;
         }
     }
-    else if (ev.type == sf::Event::KeyReleased) {
+    else if (ev.type == sf::Event::KeyReleased) 
+    {
         Anim = false;
         frame = 0;
     }

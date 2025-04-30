@@ -47,7 +47,7 @@ Fossils::Fossils(int x, int y)
 	isVisibleShovel = false;
 	Trigger = false;
 };
-void Fossils::ToolsControl(sf::Event& ev, float time)
+void Fossils::ToolsControl(sf::Event& ev)
 {
 	if (ev.type == sf::Event::KeyPressed)
 	{

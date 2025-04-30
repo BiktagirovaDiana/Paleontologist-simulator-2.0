@@ -12,11 +12,12 @@ public:
     Base();
     void handleEvent(sf::Event& event) override;
     void update(float time) override;
-    void draw(sf::RenderWindow& window, sf::View GameView) override;
+    void draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView) override;
 
 private:
     PlayerController Player;
     UI Text;
+
     sf::Texture BackgroundTexture;
     sf::Sprite BackgroundSprite;
     

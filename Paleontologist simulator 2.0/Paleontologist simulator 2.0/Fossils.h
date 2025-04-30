@@ -11,7 +11,7 @@ public:
 
 	Fossils(int x, int y);
 
-	void ToolsControl(sf::Event& ev, float time);
+	void ToolsControl(sf::Event& ev);
 	void Update(float time);
 	void draw(sf::RenderWindow& window);
 	virtual void DrawLandLevel4() = 0;
