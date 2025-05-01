@@ -84,9 +84,9 @@ void Fossils::ToolsControl(sf::Event& ev)
 		{
 			PlayerHand = None;
 			Excavation();
-			//isToolDelayActive = true;
-			//toolDelayTimer.restart();
+
 		}
+		
 	}
 	
 }

@@ -10,7 +10,7 @@ Expedition_1::Expedition_1(): Pterodactyl(95, 550), Tyrannosaurus(1610, 270), Ma
 	TransitionBase = sf::FloatRect(800, 0, 300, 20);
 	
 }
-void Expedition_1::handleEvent(sf::Event& event) 
+void Expedition_1::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
 	Player.PlayerMovement(event);
 
@@ -54,7 +54,6 @@ void Expedition_1::draw(sf::RenderWindow& window, sf::View GameView, sf::View UI
 	Player.draw(window);
 
 	window.setView(UIView);
-	Text.draw(window);
 	Text.draw(window);
 
 }

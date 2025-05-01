@@ -1,5 +1,8 @@
 #include "PlayerController.h"
 #include "Fossils.h"
+#include "Inventory.h"
+
+
 
 PlayerController::PlayerController() :currentDir(Down), speedPlayer(150), frame(0), Anim(false)
 {
@@ -44,6 +47,7 @@ void PlayerController::PlayerMovement(sf::Event& ev)
             currentDir = Right;
             Anim = true;
         }
+        
     }
     else if (ev.type == sf::Event::KeyReleased) 
     {

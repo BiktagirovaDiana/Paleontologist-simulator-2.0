@@ -21,6 +21,13 @@ protected:
 	sf::Sprite SatietySprite;
 	std::ostringstream LevelSatietyString;
 
+	//Деньги
+	sf::Text TextCash;
+	sf::Texture CashTexture;
+	sf::Sprite CashSprite;
+	std::ostringstream CashString;
+
+
 	//Тиранозавр
 	sf::Text TextTyrann;
 	sf::Texture IconTyrannTexture;
@@ -62,6 +69,18 @@ protected:
 	sf::Texture IconBrushTexture;
 	sf::Sprite IconBrushSprite;
 	std::ostringstream BrushString;
+
+	//Тушенка
+	sf::Text TextStew;
+	sf::Texture IconStewTexture;
+	sf::Sprite IconStewSprite;
+	std::ostringstream StewString;
+
+	//Дошик
+	sf::Text TextDoshirak;
+	sf::Texture IconDoshirakTexture;
+	sf::Sprite IconDoshirakSprite;
+	std::ostringstream DoshirakString;
 
 };
 

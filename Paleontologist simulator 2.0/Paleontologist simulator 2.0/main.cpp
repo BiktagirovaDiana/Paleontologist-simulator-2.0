@@ -15,6 +15,7 @@
 
 #include "Base.h"
 #include "Expedition_1.h"
+#include "Museum.h"
 
 #include "Pterodactyl.h"
 #include "Tyrannosaurus.h"
@@ -23,21 +24,23 @@
 
 
 int LevelSatiety = 10;
+//int Cash = 0;
 
-int TyrannosaurusBones = 0;
-int PterodactylBones = 0;
-int MammothBones = 0;
-int NeanderthalBones = 0;
-
-int EndurancePickaxe = 100;
-int EnduranceShovel = 100;
-int EnduranceBrush = 100; 
+//int TyrannosaurusBones = 0;
+//int PterodactylBones = 0;
+//int MammothBones = 0;
+//int NeanderthalBones = 0;
+//
+//int EndurancePickaxe = 100;
+//int EnduranceShovel = 100;
+//int EnduranceBrush = 100; 
 
 bool CheckBase = false;
 bool CheckExpedition1 = false;
+bool CheckMuseum = false;
 
 
-enum class GameState { Base, Expedition_1 };
+enum class GameState { Base, Expedition_1, Museum };
 
 
 int main()
@@ -58,6 +61,9 @@ int main()
 	sf::Event ev; //для отслеживания действий игрока
 
 	sf::Clock Clock; //время
+
+	Inventory In;
+	Museum Mu;
 
 
 
@@ -80,12 +86,27 @@ int main()
 
 			if (ev.type == sf::Event::KeyPressed) {
 				if (ev.key.code == sf::Keyboard::P) {
-					State = GameState::Base;
-					currentScene = std::make_unique<Base>();
+					In.AddCash();
 				}
-				else if (ev.key.code == sf::Keyboard::L) {
-					State = GameState::Expedition_1;
-					currentScene = std::make_unique<Expedition_1>();
+				if (ev.key.code == sf::Keyboard::O) {
+					In.AddStew();
+					In.AddDoshirak();
+				}
+				if (ev.key.code == sf::Keyboard::I) {
+					State = GameState::Museum;
+					currentScene = std::make_unique<Museum>();
+					CheckMuseum = false;
+				}
+				if (ev.key.code == sf::Keyboard::L) {
+					Mu.AddLevel();
+				}
+				if (ev.type == sf::Event::KeyPressed && ev.key.code == sf::Keyboard::F)
+				{
+					In.EatingDoshik();
+				}
+				if (ev.type == sf::Event::KeyPressed && ev.key.code == sf::Keyboard::G)
+				{
+					In.EatingStew();
 				}
 			}
 			if (CheckExpedition1 == true) 
@@ -100,8 +121,14 @@ int main()
 				currentScene = std::make_unique<Base>();
 				CheckBase = false;
 			}
+			if (CheckMuseum == true) 
+			{
+				State = GameState::Museum;
+				currentScene = std::make_unique<Museum>();
+				CheckMuseum = false;
+			}
 
-			currentScene->handleEvent(ev);
+			currentScene->handleEvent(ev, window);
 			
 		}
 		

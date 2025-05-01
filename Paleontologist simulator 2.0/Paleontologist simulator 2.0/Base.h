@@ -10,7 +10,7 @@ class Base : public Scene
 
 public:
     Base();
-    void handleEvent(sf::Event& event) override;
+    void handleEvent(sf::Event& event, sf::RenderWindow& window) override;
     void update(float time) override;
     void draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView) override;
 
@@ -22,5 +22,5 @@ private:
     sf::Sprite BackgroundSprite;
 
     sf::FloatRect TransitionExpedition1;
-    
+    sf::FloatRect TransitionMuseum;
 };

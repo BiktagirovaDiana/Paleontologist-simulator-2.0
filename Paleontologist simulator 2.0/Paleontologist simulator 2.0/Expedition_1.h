@@ -13,7 +13,7 @@
 class Expedition_1 : public Scene {
 public:
     Expedition_1();
-    void handleEvent(sf::Event& event) override;
+    void handleEvent(sf::Event& event, sf::RenderWindow& window) override;
     void update(float deltaTime) override;
     void draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView) override;
 
