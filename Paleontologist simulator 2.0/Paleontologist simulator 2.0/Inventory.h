@@ -81,6 +81,10 @@ public:
 		NeanderthalBones++;
 	}
 
+	static int getTyrannosaurusBones() {
+		return TyrannosaurusBones;
+	}
+
 
 	//Добавление инструментов
 	void AddPickaxe()  //Добавление кирки, для магаза

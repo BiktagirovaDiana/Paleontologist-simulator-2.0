@@ -11,7 +11,7 @@ Museum::Museum()
 	TyrannosaurusTexture.loadFromFile("Tyrannosaurus.png");
 	TyrannosaurusSprite.setTexture(TyrannosaurusTexture);
 	TyrannosaurusSprite.setScale(2, 2);
-	TyrannosaurusSprite.setPosition(50, 150);
+	TyrannosaurusSprite.setPosition(-50, 70);
 
 	SellTyrannosaurusTexture.loadFromFile("UI3.png");
 	SellTyrannosaurusSprite.setTexture(SellTyrannosaurusTexture);
@@ -33,7 +33,11 @@ void Museum::handleEvent(sf::Event& event, sf::RenderWindow& window)
 			// ѕровер€ем, пересекаетс€ ли клик со спрайтом
 			if (SellTyrannosaurusSprite.getGlobalBounds().contains(worldPos)) 
 			{
-				In.SellTyrannosaurus(); 
+				if (In.getTyrannosaurusBones() > 0)
+				{
+					In.SellTyrannosaurus();
+					AddLevel();
+				}
 				
 			}
 		}
@@ -55,16 +59,16 @@ void Museum::update(float time)
 		TyrannosaurusSprite.setTextureRect(sf::IntRect(0, 0, 400, 300));
 		break;
 	case 2:
-		TyrannosaurusSprite.setTextureRect(sf::IntRect(400, 0, 800, 300));
+		TyrannosaurusSprite.setTextureRect(sf::IntRect(400, 0, 400, 300));
 		break;
 	case 3:
-		TyrannosaurusSprite.setTextureRect(sf::IntRect(800, 0, 1200, 300));
+		TyrannosaurusSprite.setTextureRect(sf::IntRect(800, 0, 400, 300));
 		break;
 	case 4:
-		TyrannosaurusSprite.setTextureRect(sf::IntRect(1200, 0, 1600, 300));
+		TyrannosaurusSprite.setTextureRect(sf::IntRect(1200, 0, 400, 300));
 		break;
 	case 5:
-		TyrannosaurusSprite.setTextureRect(sf::IntRect(1600, 0, 2000, 300));
+		TyrannosaurusSprite.setTextureRect(sf::IntRect(1600, 0, 400, 300));
 		break;
 	default:
 		break;
