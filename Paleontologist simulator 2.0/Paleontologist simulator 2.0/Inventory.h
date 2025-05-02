@@ -56,14 +56,25 @@ public:
 
 	void SellTyrannosaurus() 
 	{
-		if (TyrannosaurusBones > 0) 
-		{
-			TyrannosaurusBones--;
-			Cash += 200;
-
-			//Museum.AddLevel();
-		}
+		TyrannosaurusBones--;
+		Cash += 300;
 	}
+	void SellPterodactyl()
+	{
+		PterodactylBones--;
+		Cash += 300;
+	}
+	void SellMammoth()
+	{
+		MammothBones--;
+		Cash += 200;
+	}
+	void SellNeanderthal()
+	{
+		NeanderthalBones--;
+		Cash += 250;
+	}
+
 	void AddBonesTyrannosaurus()
 	{
 		TyrannosaurusBones++;
@@ -83,6 +94,15 @@ public:
 
 	static int getTyrannosaurusBones() {
 		return TyrannosaurusBones;
+	}
+	static int getPterodactylBones() {
+		return PterodactylBones;
+	}
+	static int getMammothBones() {
+		return MammothBones;
+	}
+	static int getNeanderthalBones() {
+		return NeanderthalBones;
 	}
 
 

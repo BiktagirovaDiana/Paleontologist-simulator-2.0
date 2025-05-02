@@ -4,7 +4,7 @@ int Inventory::Cash = 100;
 int Inventory::LevelSatiety = 10;
 
 int Inventory::TyrannosaurusBones = 5;
-int Inventory::PterodactylBones = 0;
+int Inventory::PterodactylBones = 5;
 int Inventory::MammothBones = 0;
 int Inventory::NeanderthalBones = 0;
 

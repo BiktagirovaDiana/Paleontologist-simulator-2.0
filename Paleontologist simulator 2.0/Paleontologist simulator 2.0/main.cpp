@@ -97,9 +97,6 @@ int main()
 					currentScene = std::make_unique<Museum>();
 					CheckMuseum = false;
 				}
-				if (ev.key.code == sf::Keyboard::L) {
-					Mu.AddLevel();
-				}
 				if (ev.type == sf::Event::KeyPressed && ev.key.code == sf::Keyboard::F)
 				{
 					In.EatingDoshik();
