@@ -36,25 +36,26 @@ UI::UI()
 	TextNeand.setFont(Touraine);
 	TextNeand.setCharacterSize(50);
 	TextNeand.setFillColor(sf::Color::Black);
-	TextNeand.setPosition(900, 70);
+	TextNeand.setPosition(620, 70);
+
 
 	IconNeandTexture.loadFromFile("UI1.png");
 	IconNeandSprite.setTexture(IconNeandTexture);
 	IconNeandSprite.setTextureRect(sf::IntRect(720, 360, 360, 360));
 	IconNeandSprite.setScale(0.5, 0.5);
-	IconNeandSprite.setPosition(750, 5);
+	IconNeandSprite.setPosition(480, 5);
 
 	//Мамонт
 	TextMammoth.setFont(Touraine);
 	TextMammoth.setCharacterSize(50);
 	TextMammoth.setFillColor(sf::Color::Black);
-	TextMammoth.setPosition(700, 70);
+	TextMammoth.setPosition(910, 70);
 
 	IconMammothTexture.loadFromFile("UI2.png");
 	IconMammothSprite.setTexture(IconMammothTexture);
 	IconMammothSprite.setTextureRect(sf::IntRect(1080, 360, 360, 360));
 	IconMammothSprite.setScale(0.5, 0.5);
-	IconMammothSprite.setPosition(500, 5);
+	IconMammothSprite.setPosition(730, 5);
 
 
 

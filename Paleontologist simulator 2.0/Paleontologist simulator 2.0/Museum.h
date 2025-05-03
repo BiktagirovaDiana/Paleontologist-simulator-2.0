@@ -13,6 +13,8 @@ public:
     void draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView) override;
     void AddLevelTyrannosaurus();
     void AddLevelPterodactyl();
+    void AddLevelMammoth();
+    void AddLevelNeanderthal();
 private:
 
     sf::Texture BackgroundTexture;
@@ -34,6 +36,22 @@ private:
 
     sf::Texture SellPterodactylTexture;
     sf::Sprite SellPterodactylSprite;
+
+    //Мамонт
+    sf::Texture MammothTexture;
+    sf::Sprite MammothSprite;
+    static int LevelMammoth;
+
+    sf::Texture SellMammothTexture;
+    sf::Sprite SellMammothSprite;
+
+    //Неандерталец
+    sf::Texture NeanderthalTexture;
+    sf::Sprite NeanderthalSprite;
+    static int LevelNeanderthal;
+
+    sf::Texture SellNeanderthalTexture;
+    sf::Sprite SellNeanderthalSprite;
 
     UI Text;
 
