@@ -15,46 +15,40 @@ public:
     void AddLevelPterodactyl();
     void AddLevelMammoth();
     void AddLevelNeanderthal();
+
+
 private:
 
     sf::Texture BackgroundTexture;
     sf::Sprite BackgroundSprite;
-    
+
+    sf::Texture SkeletonsTexture;
+    sf::Texture UI3Texture;
 
     //Тираннозавр
-    sf::Texture TyrannosaurusTexture;
     sf::Sprite TyrannosaurusSprite;
     static int LevelTyrannosaurus;
-
-    sf::Texture SellTyrannosaurusTexture;
     sf::Sprite SellTyrannosaurusSprite;
 
     //Птерадактиль
-    sf::Texture PterodactylTexture;
     sf::Sprite PterodactylSprite;
     static int LevelPterodactyl;
-
-    sf::Texture SellPterodactylTexture;
     sf::Sprite SellPterodactylSprite;
 
     //Мамонт
-    sf::Texture MammothTexture;
     sf::Sprite MammothSprite;
     static int LevelMammoth;
-
-    sf::Texture SellMammothTexture;
     sf::Sprite SellMammothSprite;
 
     //Неандерталец
-    sf::Texture NeanderthalTexture;
     sf::Sprite NeanderthalSprite;
     static int LevelNeanderthal;
-
-    sf::Texture SellNeanderthalTexture;
     sf::Sprite SellNeanderthalSprite;
 
-    UI Text;
+    //Выход
+    sf::Sprite ExitSprite;
 
- 
+
+    UI Text;
 };
 

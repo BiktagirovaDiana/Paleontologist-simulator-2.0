@@ -5,16 +5,16 @@
 
 Fossils::Fossils(int x, int y)
 {
-
 	//Нераскопанные 
 	TextureLand.loadFromFile("Land.png");
 	LandSprite.setTexture(TextureLand);
 	LandSprite.setTextureRect(sf::IntRect(0, 0, 270, 203));
 	LandSprite.setPosition(x, y);
 
+	TextureTools.loadFromFile("Tools.png");
+
 	//Кирка
-	TexturePickaxe.loadFromFile("Tools.png");
-	PickaxeSprite.setTexture(TexturePickaxe);
+	PickaxeSprite.setTexture(TextureTools);
 	PickaxeSprite.setTextureRect(sf::IntRect(0, 0, 88, 75));
 	PickaxeSprite.setPosition
 	(
@@ -24,8 +24,7 @@ Fossils::Fossils(int x, int y)
 	isVisiblePickaxe = false;
 
 	//Лопата
-	TextureShovel.loadFromFile("Tools.png");
-	ShovelSprite.setTexture(TextureShovel);
+	ShovelSprite.setTexture(TextureTools);
 	ShovelSprite.setTextureRect(sf::IntRect(0, 75, 88, 75));
 	ShovelSprite.setPosition
 	(
@@ -34,8 +33,7 @@ Fossils::Fossils(int x, int y)
 	);
 
 	//Кисть 
-	TextureBrush.loadFromFile("Tools.png");
-	BrushSprite.setTexture(TextureBrush);
+	BrushSprite.setTexture(TextureTools);
 	BrushSprite.setTextureRect(sf::IntRect(0, 150, 88, 75));
 	BrushSprite.setPosition
 	(

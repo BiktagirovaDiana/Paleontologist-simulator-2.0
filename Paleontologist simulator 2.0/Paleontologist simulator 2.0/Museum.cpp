@@ -12,51 +12,49 @@ Museum::Museum()
 	BackgroundTexture.loadFromFile("Background_Museum.png");
 	BackgroundSprite.setTexture(BackgroundTexture);
 
+	SkeletonsTexture.loadFromFile("Skeletons2.png");
+	UI3Texture.loadFromFile("UI3.png");
+
 	//Тираннозавр
-	TyrannosaurusTexture.loadFromFile("Skeletons.png");
-	TyrannosaurusSprite.setTexture(TyrannosaurusTexture);
-	TyrannosaurusSprite.setScale(2, 2);
+	TyrannosaurusSprite.setTexture(SkeletonsTexture);
+	TyrannosaurusSprite.setScale(1, 1);
 	TyrannosaurusSprite.setPosition(-50, 70);
 
-	SellTyrannosaurusTexture.loadFromFile("UI3.png");
-	SellTyrannosaurusSprite.setTexture(SellTyrannosaurusTexture);
+	SellTyrannosaurusSprite.setTexture(UI3Texture);
 	SellTyrannosaurusSprite.setTextureRect(sf::IntRect(0, 0, 180, 55));
 	SellTyrannosaurusSprite.setPosition(570, 800);
 
 	//Птерадактиль
-	PterodactylTexture.loadFromFile("Skeletons.png");
-	PterodactylSprite.setTexture(PterodactylTexture);
-	PterodactylSprite.setScale(2, 2);
+	PterodactylSprite.setTexture(SkeletonsTexture);
+	PterodactylSprite.setScale(1, 1);
 	PterodactylSprite.setPosition(300, 200);
 
-	SellPterodactylTexture.loadFromFile("UI3.png");
-	SellPterodactylSprite.setTexture(SellPterodactylTexture);
+	SellPterodactylSprite.setTexture(UI3Texture);
 	SellPterodactylSprite.setTextureRect(sf::IntRect(0, 0, 180, 55));
 	SellPterodactylSprite.setPosition(810, 800);
 
 	//Неандерталец
-	NeanderthalTexture.loadFromFile("Skeletons.png");
-	NeanderthalSprite.setTexture(NeanderthalTexture);
-	NeanderthalSprite.setScale(2, 2);
+	NeanderthalSprite.setTexture(SkeletonsTexture);
+	NeanderthalSprite.setScale(1, 1);
 	NeanderthalSprite.setPosition(950, 230);
 
-	SellNeanderthalTexture.loadFromFile("UI3.png");
-	SellNeanderthalSprite.setTexture(SellNeanderthalTexture);
+	SellNeanderthalSprite.setTexture(UI3Texture);
 	SellNeanderthalSprite.setTextureRect(sf::IntRect(0, 0, 180, 55));
 	SellNeanderthalSprite.setPosition(1030, 800);
 
 	//Мамонт
-	MammothTexture.loadFromFile("Skeletons.png");
-	MammothSprite.setTexture(MammothTexture);
-	MammothSprite.setScale(1.5, 1.5);
-	MammothSprite.setPosition(1230, 170);
+	MammothSprite.setTexture(SkeletonsTexture);
+	MammothSprite.setScale(1, 1);
+	MammothSprite.setPosition(1130, 70);
 
-	SellMammothTexture.loadFromFile("UI3.png");
-	SellMammothSprite.setTexture(SellMammothTexture);
+	SellMammothSprite.setTexture(UI3Texture);
 	SellMammothSprite.setTextureRect(sf::IntRect(0, 0, 180, 55));
 	SellMammothSprite.setPosition(1270, 800);
 
-	
+	//Выход
+	ExitSprite.setTexture(UI3Texture);
+	ExitSprite.setTextureRect(sf::IntRect(360, 0, 180, 180));
+	ExitSprite.setPosition(20, 850);
 
 }
 void Museum::handleEvent(sf::Event& event, sf::RenderWindow& window)
@@ -65,12 +63,12 @@ void Museum::handleEvent(sf::Event& event, sf::RenderWindow& window)
 	if (event.type == sf::Event::MouseButtonPressed) 
 	{
 		if (event.mouseButton.button == sf::Mouse::Left) {
-			// Получаем позицию клика
+			//позицию клика
 			sf::Vector2i mousePos = sf::Mouse::getPosition(window);
-			// Преобразуем в координаты окна (если нужно)
+			//координаты окна
 			sf::Vector2f windowPos = window.mapPixelToCoords(mousePos);
 
-			// Проверяем, пересекается ли клик со спрайтом
+
 			if (SellTyrannosaurusSprite.getGlobalBounds().contains(windowPos)) 
 			{
 				if (In.getTyrannosaurusBones() > 0)
@@ -78,7 +76,6 @@ void Museum::handleEvent(sf::Event& event, sf::RenderWindow& window)
 					In.SellTyrannosaurus();
 					AddLevelTyrannosaurus();
 				}
-				
 			}
 			else if (SellPterodactylSprite.getGlobalBounds().contains(windowPos))
 			{
@@ -104,6 +101,10 @@ void Museum::handleEvent(sf::Event& event, sf::RenderWindow& window)
 					AddLevelNeanderthal();
 				}
 			}
+			else if (ExitSprite.getGlobalBounds().contains(windowPos)) 
+			{
+				CheckBase = true;
+			}
 		}
 	}
 }
@@ -128,104 +129,29 @@ void Museum::AddLevelNeanderthal()
 }
 
 
-
 void Museum::update(float time)
 {
-	switch (LevelTyrannosaurus)
-	{
-	case 0:
-		TyrannosaurusSprite.setTextureRect(sf::IntRect(0, 0, 0, 0));
-		break;
-	case 1:
-		TyrannosaurusSprite.setTextureRect(sf::IntRect(0, 0, 400, 300));
-		break;
-	case 2:
-		TyrannosaurusSprite.setTextureRect(sf::IntRect(400, 0, 400, 300));
-		break;
-	case 3:
-		TyrannosaurusSprite.setTextureRect(sf::IntRect(800, 0, 400, 300));
-		break;
-	case 4:
-		TyrannosaurusSprite.setTextureRect(sf::IntRect(1200, 0, 400, 300));
-		break;
-	case 5:
-		TyrannosaurusSprite.setTextureRect(sf::IntRect(1600, 0, 400, 300));
-		break;
-	}
+	int x = 800;
+	int y = 600;
 
-	switch (LevelPterodactyl)
-	{
-	case 0:
-		PterodactylSprite.setTextureRect(sf::IntRect(0, 300, 0, 0));
-		break;
-	case 1:
-		PterodactylSprite.setTextureRect(sf::IntRect(0, 300, 400, 300));
-		break;
-	case 2:
-		PterodactylSprite.setTextureRect(sf::IntRect(400, 300, 400, 300));
-		break;
-	case 3:
-		PterodactylSprite.setTextureRect(sf::IntRect(800, 300, 400, 300));
-		break;
-	case 4:
-		PterodactylSprite.setTextureRect(sf::IntRect(1200, 300, 400, 300));
-		break;
-	case 5:
-		PterodactylSprite.setTextureRect(sf::IntRect(1600, 300, 400, 300));
-		break;
-	}
+	if (LevelTyrannosaurus == 0) TyrannosaurusSprite.setTextureRect(sf::IntRect(0, 0, 0, 0));
+	else if (LevelTyrannosaurus <= 5) TyrannosaurusSprite.setTextureRect(sf::IntRect((LevelTyrannosaurus - 1)* 800, 0, x, y));
 
-	switch (LevelNeanderthal)
-	{
-	case 0:
-		NeanderthalSprite.setTextureRect(sf::IntRect(0, 900, 0, 0));
-		break;
-	case 1:
-		NeanderthalSprite.setTextureRect(sf::IntRect(0, 900, 400, 300));
-		break;
-	case 2:
-		NeanderthalSprite.setTextureRect(sf::IntRect(400, 900, 400, 300));
-		break;
-	case 3:
-		NeanderthalSprite.setTextureRect(sf::IntRect(800, 900, 400, 300));
-		break;
-	case 4:
-		NeanderthalSprite.setTextureRect(sf::IntRect(1200, 900, 400, 300));
-		break;
-	case 5:
-		NeanderthalSprite.setTextureRect(sf::IntRect(1600, 900, 400, 300));
-		break;
-	}
+	if (LevelPterodactyl == 0) PterodactylSprite.setTextureRect(sf::IntRect(0, 600, 0, 0));
+	else if (LevelPterodactyl <= 5) PterodactylSprite.setTextureRect(sf::IntRect((LevelPterodactyl - 1) * 800, 600, x, y));
 
-	switch (LevelMammoth)
-	{
-	case 0:
-		MammothSprite.setTextureRect(sf::IntRect(0, 600, 0, 0));
-		break;
-	case 1:
-		MammothSprite.setTextureRect(sf::IntRect(0, 600, 400, 300));
-		break;
-	case 2:
-		MammothSprite.setTextureRect(sf::IntRect(400, 600, 400, 300));
-		break;
-	case 3:
-		MammothSprite.setTextureRect(sf::IntRect(800, 600, 400, 300));
-		break;
-	case 4:
-		MammothSprite.setTextureRect(sf::IntRect(1200, 600, 400, 300));
-		break;
-	case 5:
-		MammothSprite.setTextureRect(sf::IntRect(1600, 600, 400, 300));
-		break;
-	}
+	if (LevelNeanderthal == 0) NeanderthalSprite.setTextureRect(sf::IntRect(0, 1800, 0, 0));
+	else if (LevelNeanderthal <= 5) NeanderthalSprite.setTextureRect(sf::IntRect((LevelNeanderthal - 1) * 800, 1800, x, y));
 
-	
+	if (LevelMammoth == 0) MammothSprite.setTextureRect(sf::IntRect(0, 1200, 0, 0));
+	else if (LevelMammoth <= 5) MammothSprite.setTextureRect(sf::IntRect((LevelMammoth - 1) * 800, 1200, x, y));
+
 
 }
 
 void Museum::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
 {
-	window.setView(GameView);
+	//window.setView(GameView);
 	window.draw(BackgroundSprite);
 
 	window.draw(TyrannosaurusSprite);
@@ -242,9 +168,7 @@ void Museum::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
 	window.draw(NeanderthalSprite);
 	window.draw(SellNeanderthalSprite);
 
-	
-
-	
-	window.setView(UIView);
+	window.draw(ExitSprite);
+	//window.setView(UIView);
 	Text.draw(window);
 }

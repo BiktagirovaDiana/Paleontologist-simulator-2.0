@@ -51,8 +51,11 @@ protected:
 
 	UI Text;
 
+
+	sf::Texture TextureTools;
+
 	//Кирка
-	sf::Texture TexturePickaxe;
+	//sf::Texture TexturePickaxe;
 	sf::Sprite PickaxeSprite;
 	int FramePickaxe = 0;
 	bool AnimPickaxe = false;
@@ -60,7 +63,7 @@ protected:
 	bool shouldChangeLandPickaxe = false; //флаг для смены спрайта
 
 	//Лопата
-	sf::Texture TextureShovel;
+	//sf::Texture TextureShovel;
 	sf::Sprite ShovelSprite;
 	int FrameShovel = 0;
 	bool AnimShovel = false;
@@ -68,7 +71,7 @@ protected:
 	bool shouldChangeLandShovel = false;
 
 	//Кисть
-	sf::Texture TextureBrush;
+	//sf::Texture TextureBrush;
 	sf::Sprite BrushSprite;
 	int FrameBrush = 0;
 	bool AnimBrush = false;
@@ -81,20 +84,6 @@ protected:
 	
 	int currentAnimationCycle;
 
-	
-
-	//Какие случаи должны быть предусмотрены
-	//Идеальные (нужные уровни, инструмент и прочность)
-	//Неправильные инструменты
-
-	//Потом дописать
-	// - Смену спрайтов
-	// - Ломание инструментов
-	// - Текст о понижении прочности инструменте
-	// - Текст о неправильной раскопки
-	// - Ломание раскопки
-
-	//вызывать при нажатии на кнопку R
 	void Excavation()
 	{
 		if (LevelSatiety > 0) 
