@@ -4,6 +4,7 @@
 extern bool CheckBase;
 extern bool CheckExpedition1;
 extern bool CheckMuseum;
+extern bool CheckShop;
 
 class Scene {
 public:

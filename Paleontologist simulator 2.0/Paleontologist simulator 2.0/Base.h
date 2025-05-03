@@ -23,4 +23,5 @@ private:
 
     sf::FloatRect TransitionExpedition1;
     sf::FloatRect TransitionMuseum;
+    sf::FloatRect TransitionShop;
 };

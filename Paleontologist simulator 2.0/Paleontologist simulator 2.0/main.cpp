@@ -16,6 +16,7 @@
 #include "Base.h"
 #include "Expedition_1.h"
 #include "Museum.h"
+#include "Shop.h"
 
 #include "Pterodactyl.h"
 #include "Tyrannosaurus.h"
@@ -38,9 +39,10 @@ int LevelSatiety = 10;
 bool CheckBase = false;
 bool CheckExpedition1 = false;
 bool CheckMuseum = false;
+bool CheckShop = false;
 
 
-enum class GameState { Base, Expedition_1, Museum };
+enum class GameState { Base, Expedition_1, Museum , Shop};
 
 
 int main()
@@ -85,17 +87,17 @@ int main()
 
 
 			if (ev.type == sf::Event::KeyPressed) {
-				if (ev.key.code == sf::Keyboard::P) {
+				/*if (ev.key.code == sf::Keyboard::P) {
 					In.AddCash();
-				}
+				}*/
 				if (ev.key.code == sf::Keyboard::O) {
 					In.AddStew();
 					In.AddDoshirak();
 				}
 				if (ev.key.code == sf::Keyboard::I) {
-					State = GameState::Museum;
-					currentScene = std::make_unique<Museum>();
-					CheckMuseum = false;
+					State = GameState::Shop;
+					currentScene = std::make_unique<Shop>();
+					CheckShop = false;
 				}
 				if (ev.type == sf::Event::KeyPressed && ev.key.code == sf::Keyboard::F)
 				{
@@ -123,6 +125,12 @@ int main()
 				State = GameState::Museum;
 				currentScene = std::make_unique<Museum>();
 				CheckMuseum = false;
+			}
+			if (CheckShop == true) 
+			{
+				State = GameState::Shop;
+				currentScene = std::make_unique<Shop>();
+				CheckShop = false;
 			}
 
 			currentScene->handleEvent(ev, window);

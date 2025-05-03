@@ -151,7 +151,6 @@ void Museum::update(float time)
 
 void Museum::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
 {
-	//window.setView(GameView);
 	window.draw(BackgroundSprite);
 
 	window.draw(TyrannosaurusSprite);
@@ -169,6 +168,5 @@ void Museum::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
 	window.draw(SellNeanderthalSprite);
 
 	window.draw(ExitSprite);
-	//window.setView(UIView);
 	Text.draw(window);
 }

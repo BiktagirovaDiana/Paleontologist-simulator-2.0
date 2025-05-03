@@ -7,6 +7,7 @@ Base::Base()
 
 	TransitionExpedition1 = sf::FloatRect(1400, 900, 300, 200);
 	TransitionMuseum = sf::FloatRect(1400, 0, 300, 10);
+	TransitionShop = sf::FloatRect(220, 0, 300, 10);
 }
 void Base::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
@@ -23,6 +24,10 @@ void Base::update(float time)
 	if (TransitionMuseum.contains(Player.getPosition()))
 	{
 		CheckMuseum = true;
+	}
+	if (TransitionShop.contains(Player.getPosition()))
+	{
+		CheckShop = true;
 	}
 }
 void Base::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
