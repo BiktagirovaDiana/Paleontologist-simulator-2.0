@@ -140,9 +140,11 @@
     <ClCompile Include="Base.cpp" />
     <ClCompile Include="Expedition_1.cpp" />
     <ClCompile Include="Fossils.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mammoth.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Museum.cpp" />
     <ClCompile Include="Neanderthal.cpp" />
     <ClCompile Include="PlayerController.cpp" />
@@ -156,8 +158,10 @@
     <ClInclude Include="Base.h" />
     <ClInclude Include="Expedition_1.h" />
     <ClInclude Include="Fossils.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="Mammoth.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Museum.h" />
     <ClInclude Include="Neanderthal.h" />
     <ClInclude Include="PlayerController.h" />

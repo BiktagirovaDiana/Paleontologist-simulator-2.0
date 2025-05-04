@@ -67,49 +67,54 @@ Shop::Shop()
 }
 void Shop::handleEvent(sf::Event& event, sf::RenderWindow& window) 
 {
+	window.setKeyRepeatEnabled(false);
 	Inventory In;
-	if (event.mouseButton.button == sf::Mouse::Left) {
-		//позицию клика
-		sf::Vector2i mousePos = sf::Mouse::getPosition(window);
-		//координаты окна
-		sf::Vector2f windowPos = window.mapPixelToCoords(mousePos);
+	if (event.type == sf::Event::MouseButtonPressed) 
+	{
+		if (event.mouseButton.button == sf::Mouse::Left) {
+			//позицию клика
+			sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+			//координаты окна
+			sf::Vector2f windowPos = window.mapPixelToCoords(mousePos);
 
 
-		if (PickaxeSprite.getGlobalBounds().contains(windowPos))
-		{
-			if (In.getEndurancePickaxe() == 0)
+			if (PickaxeSprite.getGlobalBounds().contains(windowPos))
 			{
-				In.AddPickaxe();
+				if (In.getEndurancePickaxe() == 0)
+				{
+					In.AddPickaxe();
+				}
 			}
-		}
-		else if (ShovelSprite.getGlobalBounds().contains(windowPos))
-		{
-			if (In.getEnduranceShovel() == 0)
+			else if (ShovelSprite.getGlobalBounds().contains(windowPos))
 			{
-				In.AddShovel();
+				if (In.getEnduranceShovel() == 0)
+				{
+					In.AddShovel();
+				}
 			}
-		}
-		else if (BrushSprite.getGlobalBounds().contains(windowPos))
-		{
-			if (In.getEnduranceBrush() == 0)
+			else if (BrushSprite.getGlobalBounds().contains(windowPos))
 			{
-				In.AddBrush();
+				if (In.getEnduranceBrush() == 0)
+				{
+					In.AddBrush();
+				}
 			}
-		}
-		else if (StrewSprite.getGlobalBounds().contains(windowPos))
-		{
-			In.AddStew();
-		}
-		else if (DoshirakSprite.getGlobalBounds().contains(windowPos))
-		{
-			In.AddDoshirak();
-		}
+			else if (StrewSprite.getGlobalBounds().contains(windowPos))
+			{
+				In.AddStew();
+			}
+			else if (DoshirakSprite.getGlobalBounds().contains(windowPos))
+			{
+				In.AddDoshirak();
+			}
 
-		else if (ExitSprite.getGlobalBounds().contains(windowPos))
-		{
-			CheckBase = true;
+			else if (ExitSprite.getGlobalBounds().contains(windowPos))
+			{
+				CheckBase = true;
+			}
 		}
 	}
+	
 }
 
 void Shop::update(float time) 

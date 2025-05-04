@@ -170,3 +170,4 @@ void Museum::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
 	window.draw(ExitSprite);
 	Text.draw(window);
 }
+

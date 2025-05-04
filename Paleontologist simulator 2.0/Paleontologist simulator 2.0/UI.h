@@ -2,17 +2,17 @@
 #include <sstream>
 #include <SFML/Graphics.hpp>
 #include "Inventory.h"
+#include "Scene.h";
 
 class UI : public Inventory
 {
 public:
 	UI();
 	void draw(sf::RenderWindow& window);
+	void handleEvent(sf::Event& event, sf::RenderWindow& window);
 
 protected:
 
-	
-	
 	sf::Font Touraine;
 
 	//ׁûעמסעü
@@ -81,6 +81,9 @@ protected:
 	sf::Texture IconDoshirakTexture;
 	sf::Sprite IconDoshirakSprite;
 	std::ostringstream DoshirakString;
+
+	sf::Texture UI4;
+	sf::Sprite IconHomeSprite;
 
 };
 

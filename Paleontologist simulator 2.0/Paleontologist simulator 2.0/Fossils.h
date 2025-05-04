@@ -92,27 +92,15 @@ protected:
 			{
 				//Проверяем нужный инструмент в руке
 				if (PlayerHand == Pickaxe) UsingPickaxe(true);
-				else if (PlayerHand == Shovel)
-				{
-					if (EnduranceShovel != 0)
-					{
-						BrokeShovel();
-						//Лопата ломается
-						//Спрайт не меняется и уровень не меняется
-					}
-					else
-					{
-						//Лопата сломана
-					}
-				}
-				else if (PlayerHand == Brush) UsingBrush(false);
+				else if (PlayerHand == Shovel && EnduranceShovel > 0) UsingShovel(false);
+				else if (PlayerHand == Brush && EnduranceBrush > 0) UsingBrush(false);
 			}
 			else if (ImmersionLevel == 3)
 			{
 				//Проверяем нужный инструмент в руке
-				if (PlayerHand == Pickaxe) UsingPickaxe(false);
-				else if (PlayerHand == Shovel) UsingShovel(true);
-				else if (PlayerHand == Brush) UsingPickaxe(false);
+				if (PlayerHand == Pickaxe && EndurancePickaxe > 0) UsingPickaxe(false);
+				else if (PlayerHand == Shovel && EnduranceShovel > 0) UsingShovel(true);
+				else if (PlayerHand == Brush && EnduranceBrush > 0) UsingPickaxe(false);
 			}
 			else if (ImmersionLevel == 2)
 			{
@@ -145,113 +133,82 @@ protected:
 	};
 	void UsingPickaxe(bool RightTool) 
 	{
-		if (RightTool == true)
+		if (RightTool == true && EndurancePickaxe > 0)
 		{
-			if (EndurancePickaxe != 0)
-			{
-				isVisiblePickaxe = true; 
-				AnimPickaxe = true;      
-				FramePickaxe = 0;      
-				DirectPickaxe = false;
-				currentAnimationCycle = 0;
+			isVisiblePickaxe = true;
+			AnimPickaxe = true;
+			FramePickaxe = 0;
+			DirectPickaxe = false;
+			currentAnimationCycle = 0;
 
-				landChangeTimer.restart();
-				shouldChangeLandPickaxe = true;
-				DamagePickaxe(15);
-				ImmersionLevel = 3;
-
-				//Удачный случай
-			}
-			else
-			{
-				//Кирка сломана
-			}
+			landChangeTimer.restart();
+			shouldChangeLandPickaxe = true;
+			DamagePickaxe(15);
+			ImmersionLevel = 3;
 		}
-		else
+		else if (RightTool == false && EndurancePickaxe > 0)
 		{
-			if (EndurancePickaxe != 0)
-			{
-				DamagePickaxe(25);
-				DrawLandLevel4();
-				Broken = true;
-				//Раскопка ломается
-			}
-			else
-			{
-				//Кирка сломана
-			}
+			isVisiblePickaxe = true;
+			AnimPickaxe = true;
+			FramePickaxe = 0;
+			DirectPickaxe = false;
+			currentAnimationCycle = 0;
+
+			DamagePickaxe(25);
+			DrawLandLevel4();
 		}
 		Hand PlayerHand = None; 
 	}
 	void UsingShovel(bool RightTool)
 	{
-		if (RightTool == true) 
+		if (RightTool == true && EnduranceShovel > 0)
 		{
-			if (EnduranceShovel != 0)
-			{
+			isVisibleShovel = true;
+			AnimShovel = true;
+			FrameShovel = 0;
+			DirectShovel = false;
+			currentAnimationCycle = 0;
 
-				isVisibleShovel = true; 
-				AnimShovel = true;      
-				FrameShovel = 0;       
-				DirectShovel = false;  
-				currentAnimationCycle = 0; 
-
-				landChangeTimer.restart();
-				shouldChangeLandShovel= true;
-				DamageShovel(20);
-				ImmersionLevel = 2;
-			}
-			else {
-				//Лопата сломана
-			}
+			landChangeTimer.restart();
+			shouldChangeLandShovel = true;
+			DamageShovel(20);
+			ImmersionLevel = 2;
 		}
-		else 
+		else if (RightTool == false && EnduranceShovel > 0)
 		{
-			if (EnduranceShovel != 0)
-			{
-				DamageShovel(30);
-				//Спрайт не меняется и уровень не меняется
-				Broken = true;
-				//Раскопка ломается
-			}
-			else
-			{
-				//Лопата сломана
-			}
+			isVisibleShovel = true;
+			AnimShovel = true;
+			FrameShovel = 0;
+			DirectShovel = false;
+			currentAnimationCycle = 0;
+
+			DamageShovel(30);
 		}
 	}
 	void UsingBrush(bool RightTool) 
 	{
-		if (RightTool == true) 
+		if (RightTool == true && EnduranceBrush > 0)
 		{
-			if (EnduranceBrush != 0)
-			{
-				isVisibleBrush = true;
-				AnimBrush = true;
-				FrameBrush = 0;
-				DirectBrush = false;
-				currentAnimationCycle = 0;
+			isVisibleBrush = true;
+			AnimBrush = true;
+			FrameBrush = 0;
+			DirectBrush = false;
+			currentAnimationCycle = 0;
 
-				landChangeTimer.restart();
-				shouldChangeLandBrush = true;
-				DamageBrush(30);
-				ImmersionLevel = 1;
-			}
-			else 
-			{
-				//Кисть сломана
-			}
+			landChangeTimer.restart();
+			shouldChangeLandBrush = true;
+			DamageBrush(30);
+			ImmersionLevel = 1;
 		}
-		else 
+		else if(RightTool == false && EnduranceBrush != 0)
 		{
-			if (EnduranceBrush != 0)
-			{
-				DamageBrush(50);
-				//Спрайт не меняется и уровень не меняется
-			}
-			else {
-				//Кисть сломана
-			}
+			isVisibleBrush = true;
+			AnimBrush = true;
+			FrameBrush = 0;
+			DirectBrush = false;
+			currentAnimationCycle = 0;
+
+			DamageBrush(50);
 		}
 	}
 	void TakeBones() 
@@ -259,9 +216,6 @@ protected:
 		shouldChangeLandHand = true;
 		ImmersionLevel = 0;
 	}
-	virtual void AddFossil()
-	{
-		//intFossils++;
-	}
+	virtual void AddFossil() {};
 };
 
