@@ -11,11 +11,16 @@ public:
 
 	void EatingDoshik() 
 	{
-		if (Doshirak > 0) 
+		if (Doshirak > 0)
 		{
-			Doshirak--;
-			LevelSatiety++;
+			if (LevelSatiety < 10) 
+			{
+				Doshirak--;
+				LevelSatiety++;
+			}
+			else Doshirak--;
 		}
+		
 		
 	}
 
@@ -23,10 +28,14 @@ public:
 	{
 		if (Stew > 0)
 		{
-			Stew--;
-			LevelSatiety += 5;
+			if (LevelSatiety < 6) 
+			{
+				Stew--;
+				LevelSatiety += 5;
+			}
+			else Stew--;
+			
 		}
-		
 	}
 
 	void SellTyrannosaurus() 

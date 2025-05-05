@@ -65,7 +65,7 @@ Shop::Shop()
 	TextShovel.setPosition(1280, 680);
 
 }
-void Shop::handleEvent(sf::Event& event, sf::RenderWindow& window) 
+void Shop::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
 	window.setKeyRepeatEnabled(false);
 	Inventory In;

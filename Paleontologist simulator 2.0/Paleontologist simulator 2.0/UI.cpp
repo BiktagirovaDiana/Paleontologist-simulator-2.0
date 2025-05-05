@@ -1,7 +1,6 @@
 #include "UI.h"
 #include "Inventory.h"
 
-
 UI::UI()
 {
 	//Ўрифт
@@ -144,32 +143,31 @@ UI::UI()
 	IconDoshirakSprite.setScale(0.35, 0.35);
 	IconDoshirakSprite.setPosition(15, 740);
 
-	UI4.loadFromFile("UI4.png");
+	/*UI4.loadFromFile("UI4.png");
 	IconHomeSprite.setTexture(UI4);
 	IconHomeSprite.setTextureRect(sf::IntRect(590, 0, 200, 200));
 	IconHomeSprite.setScale(0.75, 0.75);
-	IconHomeSprite.setPosition(1750, 20);
+	IconHomeSprite.setPosition(1750, 20);*/
 
 
 }
 void UI::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
 
-	if (event.type == sf::Event::MouseButtonPressed)
-	{
-		if (event.mouseButton.button == sf::Mouse::Left) {
-			//позицию клика
-			sf::Vector2i mousePos = sf::Mouse::getPosition(window);
-			//координаты окна
-			sf::Vector2f windowPos = window.mapPixelToCoords(mousePos);
-			{
-				if (IconHomeSprite.getGlobalBounds().contains(windowPos)) {
-					CheckMenu = true;
-				}
-			}
-
-		}
-	}
+	//if (event.type == sf::Event::MouseButtonPressed)
+	//{
+	//	if (event.mouseButton.button == sf::Mouse::Left) {
+	//		//позицию клика
+	//		sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+	//		//координаты окна
+	//		sf::Vector2f windowPos = window.mapPixelToCoords(mousePos);
+	//		{
+	//			if (IconHomeSprite.getGlobalBounds().contains(windowPos)) {
+	//				CheckMenu = true;
+	//			}
+	//		}
+	//	}
+	//}
 }
 
 void UI::draw(sf::RenderWindow& window)
@@ -224,7 +222,7 @@ void UI::draw(sf::RenderWindow& window)
 	window.draw(TextCash);
 	window.draw(CashSprite);
 
-	window.draw(IconTyrannSprite);
+	window.draw(IconTyrannSprite); 
 	window.draw(TextTyrann);
 
 	window.draw(IconPterSprite);
@@ -252,5 +250,5 @@ void UI::draw(sf::RenderWindow& window)
 	window.draw(IconDoshirakSprite);
 	window.draw(TextDoshirak);
 
-	window.draw(IconHomeSprite);
+	//window.draw(IconHomeSprite);
 }

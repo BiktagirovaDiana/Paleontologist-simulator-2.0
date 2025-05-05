@@ -1,6 +1,6 @@
 #include "Inventory.h"
 
-int Inventory::Cash = 1000;
+int Inventory::Cash = 500;
 int Inventory::LevelSatiety = 10;
 
 int Inventory::TyrannosaurusBones = 0;

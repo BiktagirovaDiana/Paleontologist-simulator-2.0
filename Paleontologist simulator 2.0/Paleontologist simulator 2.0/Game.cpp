@@ -6,14 +6,34 @@
 
 void Game::NewGame()
 {
+	std::ofstream Data("Game.txt");
+	if (Data.is_open())
+	{
+		Inventory::Cash = 500;
+		Inventory::LevelSatiety = 10;
+
+		Inventory::TyrannosaurusBones = 0;
+		Inventory::PterodactylBones = 0;
+		Inventory::MammothBones = 0;
+		Inventory::NeanderthalBones = 0;
+
+		Inventory::EndurancePickaxe = 0;
+		Inventory::EnduranceShovel = 0;
+		Inventory::EnduranceBrush = 0;
+
+		Inventory::Stew = 0 ;
+		Inventory::Doshirak = 0;
+		Data.close();
+	}
+
 }
 void Game::SaveGame()
 {
 	std::ofstream Data("Game.txt");
 	if (Data.is_open())
 	{
-		Data << Cash << "\n";
-		Data << LevelSatiety << "\n";
+		Data << Inventory::Cash << "\n";
+		Data << Inventory::LevelSatiety << "\n";
 
 		Data << Inventory::TyrannosaurusBones << "\n";
 		Data << Inventory::PterodactylBones << "\n";

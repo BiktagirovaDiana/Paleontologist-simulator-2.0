@@ -44,11 +44,14 @@ bool CheckShop = false;
 bool CheckMenu = false;
 
 
+
 enum class GameState { Menu, Base, Expedition_1, Museum , Shop};
 
 
 int main()
 {
+
+	std::cout << "запуск игры" << std::endl;
 
 	sf::RenderWindow window(sf::VideoMode(1920, 1050), "Paleontologist simulator", sf::Style::Default);
 	window.setFramerateLimit(30);
@@ -108,31 +111,31 @@ int main()
 					In.EatingStew();
 				}
 			}
-			if (CheckExpedition1 == true) 
+			if (CheckExpedition1) 
 			{
 				State = GameState::Expedition_1;
 				currentScene = std::make_unique<Expedition_1>();
 				CheckExpedition1 = false;
 			}
-			if (CheckBase == true)
+			if (CheckBase)
 			{
 				State = GameState::Base;
 				currentScene = std::make_unique<Base>();
 				CheckBase = false;
 			}
-			if (CheckMuseum == true) 
+			if (CheckMuseum) 
 			{
 				State = GameState::Museum;
 				currentScene = std::make_unique<Museum>();
 				CheckMuseum = false;
 			}
-			if (CheckShop == true) 
+			if (CheckShop) 
 			{
 				State = GameState::Shop;
 				currentScene = std::make_unique<Shop>();
 				CheckShop = false;
 			}
-			if (CheckMenu == true)
+			if (CheckMenu)
 			{
 				State = GameState::Menu;
 				currentScene = std::make_unique<Menu>();

@@ -24,4 +24,7 @@ private:
     sf::FloatRect TransitionExpedition1;
     sf::FloatRect TransitionMuseum;
     sf::FloatRect TransitionShop;
+
+    sf::Texture UI4;
+    sf::Sprite IconHomeSprite;
 };

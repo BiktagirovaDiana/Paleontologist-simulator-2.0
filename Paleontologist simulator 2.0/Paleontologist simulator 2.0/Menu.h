@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "Scene.h"
+#include "Game.h"
 
 class Menu: public Scene
 {
@@ -16,8 +17,16 @@ private:
 
 	sf::Texture UI;
 
-	sf::Sprite NewGame;
-	sf::Sprite ContinueGame;
-	sf::Sprite ExitGame;
+	sf::Sprite NewGameIcon;
+	sf::Sprite ContinueGameIcon;
+	sf::Sprite ExitGameIcon;
+
+	sf::Font Touraine;
+
+	sf::Text NewGameText;
+	sf::Text ContinueGameText;
+	sf::Text ExitGameText;
+
+	Game Game;
 };
 
