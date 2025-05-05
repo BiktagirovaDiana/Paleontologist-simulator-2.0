@@ -59,8 +59,8 @@ int main()
 	// 
 	//Defaulf - закрытие и увеличение окна, надпись и т.д.
 
-	GameState State = GameState::Base;
-	std::unique_ptr<Scene> currentScene = std::make_unique<Base>();
+	GameState State = GameState::Menu;
+	std::unique_ptr<Scene> currentScene = std::make_unique<Menu>();
 
 	sf::View GameView = window.getDefaultView(); //Игровой мир
 	sf::View UIView = window.getDefaultView(); //Интерфейс
@@ -93,7 +93,7 @@ int main()
 
 			if (ev.type == sf::Event::KeyPressed) {
 
-				if (ev.key.code == sf::Keyboard::O) {
+				/*if (ev.key.code == sf::Keyboard::O) {
 					In.AddStew();
 					In.AddDoshirak();
 				}
@@ -101,7 +101,7 @@ int main()
 					State = GameState::Menu;
 					currentScene = std::make_unique<Menu>();
 					CheckMenu = false;
-				}
+				}*/
 				if (ev.type == sf::Event::KeyPressed && ev.key.code == sf::Keyboard::F)
 				{
 					In.EatingDoshik();

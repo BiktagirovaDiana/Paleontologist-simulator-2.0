@@ -2,8 +2,6 @@
 #include <sstream>
 #include <SFML/Graphics.hpp>
 #include "Inventory.h"
-#include "Scene.h";
-#include "Game.h"
 
 
 

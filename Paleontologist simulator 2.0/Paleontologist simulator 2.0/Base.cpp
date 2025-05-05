@@ -17,7 +17,7 @@ Base::Base()
 }
 void Base::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
-	Game Game;
+	
 	Player.PlayerMovement(event);
 	if (event.type == sf::Event::MouseButtonPressed)
 	{

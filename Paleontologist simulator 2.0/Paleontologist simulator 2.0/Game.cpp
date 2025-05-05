@@ -17,9 +17,9 @@ void Game::NewGame()
 		Inventory::MammothBones = 0;
 		Inventory::NeanderthalBones = 0;
 
-		Inventory::EndurancePickaxe = 0;
-		Inventory::EnduranceShovel = 0;
-		Inventory::EnduranceBrush = 0;
+		Inventory::EndurancePickaxe = 100;
+		Inventory::EnduranceShovel = 100;
+		Inventory::EnduranceBrush = 100;
 
 		Inventory::Stew = 0 ;
 		Inventory::Doshirak = 0;

@@ -4,6 +4,7 @@
 
 #include "PlayerController.h"
 #include "UI.h"
+#include "Game.h"
 
 class Base : public Scene 
 {
@@ -27,4 +28,5 @@ private:
 
     sf::Texture UI4;
     sf::Sprite IconHomeSprite;
+    Game Game;
 };
