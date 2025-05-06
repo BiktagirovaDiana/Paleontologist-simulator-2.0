@@ -10,6 +10,7 @@ public:
 	void handleEvent(sf::Event& event, sf::RenderWindow& window) override;
 	void update(float time) override;
 	void draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView) override;
+	void lose();
 
 private:
 	sf::Texture BackgroundTexture;
@@ -27,6 +28,10 @@ private:
 	sf::Text ContinueGameText;
 	sf::Text ExitGameText;
 
+	sf::Text LoseText;
 	Game Game;
+
+	//bool isLose = false;
 };
+
 

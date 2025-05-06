@@ -7,6 +7,7 @@ int Museum::LevelNeanderthal = 0;
 int Museum::LevelMammoth = 0;
 
 
+
 Museum::Museum()
 {
 	BackgroundTexture.loadFromFile("Background_Museum.png");

@@ -6,6 +6,7 @@ extern bool CheckExpedition1;
 extern bool CheckMuseum;
 extern bool CheckShop;
 extern bool CheckMenu;
+extern bool CheckLose;
 
 class Scene {
 public:

@@ -73,3 +73,8 @@ void Game::LoadGame()
 		Data.close();
 	}
 }
+
+void Game::LoseGame() 
+{
+
+}

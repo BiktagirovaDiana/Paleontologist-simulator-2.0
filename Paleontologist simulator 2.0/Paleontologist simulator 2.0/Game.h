@@ -11,6 +11,7 @@ public:
 	void NewGame();
 	void SaveGame();
 	void LoadGame();
+	void LoseGame();
 
 };
 

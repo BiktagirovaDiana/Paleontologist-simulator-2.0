@@ -23,6 +23,7 @@
 #include "Tyrannosaurus.h"
 #include "Mammoth.h"
 #include "Neanderthal.h"
+#include "Game.h"
 
 
 int LevelSatiety = 10;
@@ -42,7 +43,9 @@ bool CheckExpedition1 = false;
 bool CheckMuseum = false;
 bool CheckShop = false;
 bool CheckMenu = false;
+bool CheckLose = false;
 
+bool isLose = false;
 
 
 enum class GameState { Menu, Base, Expedition_1, Museum , Shop};
@@ -71,6 +74,7 @@ int main()
 
 	Inventory In;
 	Museum Mu;
+	Menu Me;
 
 
 
@@ -141,6 +145,14 @@ int main()
 				currentScene = std::make_unique<Menu>();
 				CheckMenu = false;
 			}
+			if (CheckLose) 
+			{
+				isLose = true;
+				Me.lose();
+				State = GameState::Menu;
+				currentScene = std::make_unique<Menu>();
+				CheckMenu = false;
+			}
 
 			currentScene->handleEvent(ev, window);
 			
@@ -151,4 +163,8 @@ int main()
 		currentScene->draw(window,GameView, UIView);
 		window.display();
 	}
+}
+void Lose() 
+{
+	                
 }

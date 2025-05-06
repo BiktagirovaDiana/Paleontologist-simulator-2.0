@@ -16,10 +16,6 @@ public:
     void AddLevelMammoth();
     void AddLevelNeanderthal();
 
-    static int getLevelTyrannosaurus() {
-        return LevelTyrannosaurus;
-    }
-
 
 private:
 

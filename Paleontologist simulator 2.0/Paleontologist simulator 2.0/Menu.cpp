@@ -1,5 +1,8 @@
 #include "Menu.h"
 #include "Game.h"
+
+extern bool isLose;
+
 Menu::Menu() 
 {
 	Touraine.loadFromFile("Touraine.ttf");
@@ -42,6 +45,12 @@ Menu::Menu()
 	ExitGameText.setFillColor(sf::Color::Black);
 	ExitGameText.setPosition(900, 725);
 
+	LoseText.setFont(Touraine);
+	LoseText.setString(L"¬€ œ–Œ»√–¿À»");
+	LoseText.setCharacterSize(60);
+	LoseText.setFillColor(sf::Color::Red);
+	LoseText.setPosition(750, 225);
+
 
 }
 void Menu::handleEvent(sf::Event& event, sf::RenderWindow& window)
@@ -60,6 +69,7 @@ void Menu::handleEvent(sf::Event& event, sf::RenderWindow& window)
 			{
 				Game.NewGame();
 				CheckBase = true;
+				isLose = false;
 			}
 			else if (ContinueGameIcon.getGlobalBounds().contains(windowPos))
 			{
@@ -73,8 +83,14 @@ void Menu::handleEvent(sf::Event& event, sf::RenderWindow& window)
 		}
 	}
 }
-void Menu::update(float time) {
+void Menu::update(float time) 
+{
 
+}
+void Menu::lose() 
+{
+	Game.NewGame();
+	
 }
 void Menu::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView) 
 {
@@ -88,4 +104,9 @@ void Menu::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
 
 	window.draw(ExitGameIcon);
 	window.draw(ExitGameText);
+	if (isLose) 
+	{
+		window.draw(LoseText);
+	}
+	
 }

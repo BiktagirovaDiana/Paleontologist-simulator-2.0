@@ -3,12 +3,76 @@
   "WorkspaceRootPath": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\PlayerController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\PlayerController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Expedition_1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Expedition_1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Expedition_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Expedition_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Fossils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Fossils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\PlayerController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\PlayerController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Museum.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Museum.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Inventory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Inventory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Museum.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Museum.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Inventory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Inventory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Fossils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Fossils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Base.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -19,36 +83,12 @@
       "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Base.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Museum.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Museum.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\UI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\UI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Museum.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Museum.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Tyrannosaurus.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -59,48 +99,8 @@
       "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Pterodactyl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\PlayerController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\PlayerController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Inventory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Inventory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Fossils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Fossils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Expedition_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Expedition_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Inventory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Inventory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Expedition_1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Expedition_1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Fossils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\Fossils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\PlayerController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|solutionrelative:Paleontologist simulator 2.0\\PlayerController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75D16AE6-F887-49D5-9D59-D620E4C217B0}|Paleontologist simulator 2.0\\Paleontologist simulator 2.0.vcxproj|D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Neanderthal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -126,13 +126,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Museum.h",
               "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Museum.h",
               "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Museum.h",
               "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Museum.h",
               "RelativeToolTip": "Paleontologist simulator 2.0\\Museum.h",
-              "ViewState": "AgIAACYAAAAAAAAAAAAEwDgAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-01T10:01:29.111Z",
               "IsPinned": true,
@@ -140,13 +140,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Museum.cpp",
               "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Museum.cpp",
               "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Museum.cpp",
               "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Museum.cpp",
               "RelativeToolTip": "Paleontologist simulator 2.0\\Museum.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-01T10:02:07.121Z",
               "IsPinned": true,
@@ -154,13 +154,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "Menu.cpp",
               "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Menu.cpp",
               "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Menu.cpp",
               "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Menu.cpp",
               "RelativeToolTip": "Paleontologist simulator 2.0\\Menu.cpp",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC4AAABBAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-04T13:15:13.674Z",
               "IsPinned": true,
@@ -168,20 +168,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 5,
               "Title": "Menu.h",
               "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Menu.h",
               "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Menu.h",
               "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Menu.h",
               "RelativeToolTip": "Paleontologist simulator 2.0\\Menu.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-04T13:14:59.232Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "UI.h",
               "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\UI.h",
               "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\UI.h",
@@ -195,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
               "Title": "UI.cpp",
               "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\UI.cpp",
               "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\UI.cpp",
@@ -204,116 +205,167 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAPwAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-13T17:00:11.803Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Inventory.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Inventory.cpp",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Inventory.cpp",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Inventory.cpp",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\Inventory.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-13T16:04:40.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Inventory.h",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Inventory.h",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Inventory.h",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Inventory.h",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\Inventory.h",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAM4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-10T04:30:23.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Scene.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Scene.cpp",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Scene.cpp",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Scene.cpp",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\Scene.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\main.cpp",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\main.cpp",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\main.cpp",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\main.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC8AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-30T11:51:07.263Z",
+              "WhenOpened": "2025-03-13T12:00:42.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
+              "Title": "Fossils.h",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Fossils.h",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Fossils.h",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Fossils.h",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\Fossils.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAHwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-10T04:30:54.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Scene.h",
               "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Scene.h",
               "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Scene.h",
               "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Scene.h",
               "RelativeToolTip": "Paleontologist simulator 2.0\\Scene.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-03T15:38:56.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Pterodactyl.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Pterodactyl.cpp",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Pterodactyl.cpp",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Pterodactyl.cpp",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\Pterodactyl.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-03T08:49:04.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Tyrannosaurus.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Tyrannosaurus.cpp",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Tyrannosaurus.cpp",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Tyrannosaurus.cpp",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\Tyrannosaurus.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-15T05:32:44.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Base.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Base.cpp",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Base.cpp",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Base.cpp",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\Base.cpp",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwB8AAAAFAAAAAAAAAA==",
+              "Title": "Expedition_1.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Expedition_1.cpp",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Expedition_1.cpp",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Expedition_1.cpp",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\Expedition_1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-03T15:31:18.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Base.h",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Base.h",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Base.h",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Base.h",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\Base.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-18T10:09:26.421Z",
+              "WhenOpened": "2025-05-04T15:37:08.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Expedition_1.h",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Expedition_1.h",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Expedition_1.h",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Expedition_1.h",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\Expedition_1.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-04T15:12:13.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerController.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\PlayerController.cpp",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\PlayerController.cpp",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\PlayerController.cpp",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\PlayerController.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-15T14:31:59.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Game.h",
               "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Game.h",
               "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Game.h",
               "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Game.h",
               "RelativeToolTip": "Paleontologist simulator 2.0\\Game.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-04T16:00:15.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Game.cpp",
               "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Game.cpp",
               "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Game.cpp",
               "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Game.cpp",
               "RelativeToolTip": "Paleontologist simulator 2.0\\Game.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-04T16:08:35.87Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
+              "Title": "PlayerController.h",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\PlayerController.h",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\PlayerController.h",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\PlayerController.h",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\PlayerController.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-26T18:28:53.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Fossils.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Fossils.cpp",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Fossils.cpp",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Fossils.cpp",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\Fossils.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-10T18:26:11.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Shop.cpp",
               "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Shop.cpp",
               "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Shop.cpp",
@@ -326,96 +378,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "main.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\main.cpp",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\main.cpp",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\main.cpp",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\main.cpp",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAD4AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-13T12:00:42.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Inventory.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Inventory.cpp",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Inventory.cpp",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Inventory.cpp",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\Inventory.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-13T16:04:40.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PlayerController.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\PlayerController.cpp",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\PlayerController.cpp",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\PlayerController.cpp",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\PlayerController.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-15T14:31:59.05Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Fossils.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Fossils.cpp",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Fossils.cpp",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Fossils.cpp",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\Fossils.cpp",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-10T18:26:11.178Z",
-              "EditorCaption": ""
+              "DocumentIndex": 19,
+              "Title": "Base.h",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Base.h",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Base.h",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Base.h",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\Base.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-18T10:09:26.421Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Expedition_1.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Expedition_1.cpp",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Expedition_1.cpp",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Expedition_1.cpp",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\Expedition_1.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABJAAAAAAAAAA==",
+              "Title": "Base.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Base.cpp",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Base.cpp",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Base.cpp",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\Base.cpp",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwB8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-04T15:37:08.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Expedition_1.h",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Expedition_1.h",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Expedition_1.h",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Expedition_1.h",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\Expedition_1.h",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAEwA8AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-04T15:12:13.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Inventory.h",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Inventory.h",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Inventory.h",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Inventory.h",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\Inventory.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMoAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-10T04:30:23.854Z"
+              "WhenOpened": "2025-05-03T15:31:18.883Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
+              "Title": "Tyrannosaurus.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Tyrannosaurus.cpp",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Tyrannosaurus.cpp",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Tyrannosaurus.cpp",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\Tyrannosaurus.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-15T05:32:44.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Pterodactyl.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Pterodactyl.cpp",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Pterodactyl.cpp",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Pterodactyl.cpp",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\Pterodactyl.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-03T08:49:04.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Scene.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Scene.cpp",
+              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Scene.cpp",
+              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Scene.cpp",
+              "RelativeToolTip": "Paleontologist simulator 2.0\\Scene.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-30T11:51:07.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "Shop.h",
               "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Shop.h",
               "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Shop.h",
@@ -424,30 +447,6 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-03T15:18:43.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Fossils.h",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Fossils.h",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\Fossils.h",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\Fossils.h",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\Fossils.h",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAUwNoAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-10T04:30:54.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "PlayerController.h",
-              "DocumentMoniker": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\PlayerController.h",
-              "RelativeDocumentMoniker": "Paleontologist simulator 2.0\\PlayerController.h",
-              "ToolTip": "D:\\GitHub\\Paleontologist-simulator-2.0\\Paleontologist-simulator-2.0\\Paleontologist simulator 2.0\\Paleontologist simulator 2.0\\PlayerController.h",
-              "RelativeToolTip": "Paleontologist simulator 2.0\\PlayerController.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-26T18:28:53.008Z"
             },
             {
               "$type": "Document",

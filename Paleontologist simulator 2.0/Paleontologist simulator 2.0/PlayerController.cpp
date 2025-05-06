@@ -1,6 +1,5 @@
 #include "PlayerController.h"
 #include "Fossils.h"
-#include "Inventory.h"
 
 
 
@@ -55,9 +54,10 @@ void PlayerController::PlayerMovement(sf::Event& ev)
         frame = 0;
     }
 }
-
 void PlayerController::Update(float time)
 {
+    
+
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
         PlayerSprite.move(0, -speedPlayer * time);
     }
@@ -102,19 +102,27 @@ void PlayerController::Update(float time)
         {
         case Up:
             PlayerSprite.setTextureRect(sf::IntRect(0, 256 * 3, 256, 256));
+            if (isDead) PlayerSprite.setColor(sf::Color(255, 0, 0, 255));
             break;
         case Down:
             PlayerSprite.setTextureRect(sf::IntRect(0, 0, 256, 256));
+            if (isDead) PlayerSprite.setColor(sf::Color(255, 0, 0, 255));
             break;
         case Left:
             PlayerSprite.setTextureRect(sf::IntRect(0, 256 * 1, 256, 256));
+            if (isDead) PlayerSprite.setColor(sf::Color(255, 0, 0, 255));
             break;
         case Right:
             PlayerSprite.setTextureRect(sf::IntRect(0, 256 * 2, 256, 256));
+            if (isDead) PlayerSprite.setColor(sf::Color(255, 0, 0, 255));
             break;
         }
     }
+
+    
+
 }
+
 void PlayerController::draw(sf::RenderWindow& window)
 {
 	window.draw(PlayerSprite);

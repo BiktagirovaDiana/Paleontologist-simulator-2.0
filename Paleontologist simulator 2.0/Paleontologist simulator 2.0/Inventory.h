@@ -1,6 +1,6 @@
 #pragma once
 #include "PlayerController.h"
-
+#include "Scene.h"
 
 class Inventory: public PlayerController
 {
@@ -94,6 +94,7 @@ public:
 	{
 		return NeanderthalBones;
 	}
+
 	static int getEndurancePickaxe() {
 		return EndurancePickaxe;
 	}
@@ -104,6 +105,13 @@ public:
 		return EnduranceBrush;
 	}
 
+	static int getLevelSatiety() 
+	{
+		return LevelSatiety;
+	}
+	static int getCash() {
+		return Cash;
+	}
 
 	//Добавление инструментов
 	void AddPickaxe()  
@@ -195,6 +203,15 @@ public:
 		EnduranceBrush = 0;
 	}
 
+	void DeadPlayer() 
+	{
+		if (LevelSatiety < 1) 
+		{
+			CheckLose = true;
+		}
+		
+	}
+
 protected:
 
 	int intFossils = 0;
@@ -214,7 +231,6 @@ protected:
 
 	static int Stew;
 	static int Doshirak;
-
 
 };
 

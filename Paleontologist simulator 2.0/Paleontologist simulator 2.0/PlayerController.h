@@ -20,8 +20,6 @@ public:
 		return PlayerSprite; 
 	} //Для передачи спрайта в Fossils
 
-
-protected:
 	
 private:
 	
@@ -33,5 +31,6 @@ private:
 	Direction currentDir;
 	bool Anim;
 	int frame = 0;
+	bool isDead = false;
 };
 

@@ -94,6 +94,7 @@ protected:
 				if (PlayerHand == Pickaxe) UsingPickaxe(true);
 				else if (PlayerHand == Shovel && EnduranceShovel > 0) UsingShovel(false);
 				else if (PlayerHand == Brush && EnduranceBrush > 0) UsingBrush(false);
+
 			}
 			else if (ImmersionLevel == 3)
 			{
@@ -113,6 +114,7 @@ protected:
 				else {
 					//раскопка сломана
 
+
 				}
 				
 			}
@@ -120,14 +122,17 @@ protected:
 			{
 				AddFossil();
 				DrawLandLevel0();
+				ImmersionLevel = 0;
+				
 				//Подбор раскопки
 			}
 			LevelSatiety--;
+			DeadPlayer();
 		}
 		else 
 		{
-			LevelSatiety = 0;
-			//Проигрыш
+			DeadPlayer();
+			//Проигрыш..
 		}
 		
 	};
