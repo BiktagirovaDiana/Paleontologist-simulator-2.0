@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "Scene.h"
+#include "Inventory.h"
 
 #include "PlayerController.h"
 #include "UI.h"
@@ -33,6 +34,7 @@ private:
     sf::Sprite BusSprite;
 
     bool Trigger = false;
-
+    Inventory In;
+    
     Game Game;
 };

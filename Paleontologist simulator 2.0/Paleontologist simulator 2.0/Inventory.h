@@ -112,13 +112,17 @@ public:
 	static int getCash() {
 		return Cash;
 	}
+	void BuyExpedition() 
+	{
+		Cash -= 150;
+	}
 
 	//Добавление инструментов
 	void AddPickaxe()  
 	{
-		if (EndurancePickaxe <= 0 && Cash >= 250) 
+		if (Cash >= 250) 
 		{
-			EndurancePickaxe = 100;
+			EndurancePickaxe+= 100;
 			Cash -= 250;
 		}
 		else
@@ -128,19 +132,15 @@ public:
 	}
 	void AddShovel()
 	{
-		if (EnduranceShovel <= 0 && Cash >= 150) 
+		if (Cash >= 150) 
 		{
 			EnduranceShovel = 100;
 			Cash -= 150;
 		}
-		else
-		{
-			//Лопата еще есть
-		}
 	}
 	void AddBrush()
 	{
-		if (EnduranceBrush <= 0 && Cash >= 100)
+		if (Cash >= 100)
 		{
 			EnduranceBrush = 100;
 			Cash -= 100;
@@ -209,6 +209,10 @@ public:
 		{
 			CheckLose = true;
 		}
+		if (Cash < 1) {
+			CheckLose = true;
+		}
+
 		
 	}
 

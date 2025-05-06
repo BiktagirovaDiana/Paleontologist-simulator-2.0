@@ -23,10 +23,13 @@ public:
     {
         LandSprite.setTextureRect(sf::IntRect(0, 608, 270, 203));
     }
-    void DrawLandLevel0() override
+    void DrawLandLevel0(bool Right) override
     {
         LandSprite.setTextureRect(sf::IntRect(810, 0, 270, 203));
-        NeanderthalBones++;
+        if (Right == true)
+        {
+            NeanderthalBones++;
+        }
     }
 };
 

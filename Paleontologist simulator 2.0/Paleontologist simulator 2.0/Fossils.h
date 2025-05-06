@@ -18,7 +18,7 @@ public:
 	virtual void DrawLandLevel3() = 0;
 	virtual void DrawLandLevel2() = 0;
 	virtual void DrawLandLevel1() = 0;
-	virtual void DrawLandLevel0() = 0;
+	virtual void DrawLandLevel0(bool Right) = 0;
 	void UpdateTrigger(const sf::Sprite& playerSprite);
 	
 
@@ -88,9 +88,8 @@ protected:
 	{
 		if (LevelSatiety > 0) 
 		{
-			if (ImmersionLevel == 4) //Проверяем уровень
+			if (ImmersionLevel == 4)
 			{
-				//Проверяем нужный инструмент в руке
 				if (PlayerHand == Pickaxe) UsingPickaxe(true);
 				else if (PlayerHand == Shovel && EnduranceShovel > 0) UsingShovel(false);
 				else if (PlayerHand == Brush && EnduranceBrush > 0) UsingBrush(false);
@@ -98,31 +97,26 @@ protected:
 			}
 			else if (ImmersionLevel == 3)
 			{
-				//Проверяем нужный инструмент в руке
 				if (PlayerHand == Pickaxe && EndurancePickaxe > 0) UsingPickaxe(false);
 				else if (PlayerHand == Shovel && EnduranceShovel > 0) UsingShovel(true);
 				else if (PlayerHand == Brush && EnduranceBrush > 0) UsingPickaxe(false);
 			}
 			else if (ImmersionLevel == 2)
 			{
-				if (Broken == false) 
-				{
-					if (PlayerHand == Pickaxe) UsingPickaxe(false);
-					else if (PlayerHand == Shovel) UsingShovel(false);
-					if (PlayerHand == Brush) UsingBrush(true);
-				}
-				else {
-					//раскопка сломана
-
-
-				}
+				if (PlayerHand == Pickaxe) UsingPickaxe(false);
+				else if (PlayerHand == Shovel) UsingShovel(false);
+				if (PlayerHand == Brush) UsingBrush(true);
 				
 			}
 			else if (ImmersionLevel == 1)
 			{
-				AddFossil();
-				DrawLandLevel0();
-				ImmersionLevel = 0;
+				if (PlayerHand == Pickaxe) UsingPickaxe(false);
+				else if (PlayerHand == Shovel) UsingShovel(false);
+				if (PlayerHand == None) {
+					AddFossil();
+					DrawLandLevel0(true);
+					ImmersionLevel = 0;
+				}
 				
 				//Подбор раскопки
 			}
@@ -132,7 +126,6 @@ protected:
 		else 
 		{
 			DeadPlayer();
-			//Проигрыш..
 		}
 		
 	};
@@ -153,14 +146,30 @@ protected:
 		}
 		else if (RightTool == false && EndurancePickaxe > 0)
 		{
-			isVisiblePickaxe = true;
-			AnimPickaxe = true;
-			FramePickaxe = 0;
-			DirectPickaxe = false;
-			currentAnimationCycle = 0;
+			if (ImmersionLevel == 3) 
+			{
+				isVisiblePickaxe = true;
+				AnimPickaxe = true;
+				FramePickaxe = 0;
+				DirectPickaxe = false;
+				currentAnimationCycle = 0;
 
-			DamagePickaxe(25);
-			DrawLandLevel4();
+				DamagePickaxe(25);
+				DrawLandLevel4();
+				//Broken = true;
+			}
+			else if (ImmersionLevel < 3)
+			{
+				isVisiblePickaxe = true;
+				AnimPickaxe = true;
+				FramePickaxe = 0;
+				DirectPickaxe = false;
+				currentAnimationCycle = 0;
+
+				DamagePickaxe(25);
+				DrawLandLevel0(false);
+			}
+			
 		}
 		Hand PlayerHand = None; 
 	}
@@ -181,13 +190,19 @@ protected:
 		}
 		else if (RightTool == false && EnduranceShovel > 0)
 		{
-			isVisibleShovel = true;
-			AnimShovel = true;
-			FrameShovel = 0;
-			DirectShovel = false;
-			currentAnimationCycle = 0;
+			if (ImmersionLevel < 3) 
+			{
+				isVisibleShovel = true;
+				AnimShovel = true;
+				FrameShovel = 0;
+				DirectShovel = false;
+				currentAnimationCycle = 0;
 
-			DamageShovel(30);
+				DamageShovel(30);
+				DrawLandLevel0(false);
+				//Broken = true;
+			}
+			
 		}
 	}
 	void UsingBrush(bool RightTool) 

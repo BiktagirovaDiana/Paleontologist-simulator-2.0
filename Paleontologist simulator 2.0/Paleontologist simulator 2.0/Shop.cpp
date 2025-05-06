@@ -80,32 +80,39 @@ void Shop::handleEvent(sf::Event& event, sf::RenderWindow& window)
 
 			if (PickaxeSprite.getGlobalBounds().contains(windowPos))
 			{
-				if (In.getEndurancePickaxe() == 0)
-				{
-					In.AddPickaxe();
+				In.AddPickaxe();
+				if (In.getCash() < 1) {
+					In.DeadPlayer();
 				}
 			}
 			else if (ShovelSprite.getGlobalBounds().contains(windowPos))
 			{
-				if (In.getEnduranceShovel() == 0)
-				{
-					In.AddShovel();
+				In.AddShovel();
+				if (In.getCash() < 1) {
+					In.DeadPlayer();
 				}
+
 			}
 			else if (BrushSprite.getGlobalBounds().contains(windowPos))
 			{
-				if (In.getEnduranceBrush() == 0)
-				{
-					In.AddBrush();
+				In.AddBrush();
+				if (In.getCash() < 1) {
+					In.DeadPlayer();
 				}
 			}
 			else if (StrewSprite.getGlobalBounds().contains(windowPos))
 			{
 				In.AddStew();
+				if (In.getCash() < 1) {
+					In.DeadPlayer();
+				}
 			}
 			else if (DoshirakSprite.getGlobalBounds().contains(windowPos))
 			{
 				In.AddDoshirak();
+				if (In.getCash() < 1) {
+					In.DeadPlayer();
+				}
 			}
 
 			else if (ExitSprite.getGlobalBounds().contains(windowPos))

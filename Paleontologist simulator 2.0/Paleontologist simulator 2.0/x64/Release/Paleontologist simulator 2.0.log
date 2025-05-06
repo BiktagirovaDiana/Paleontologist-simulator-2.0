@@ -1,7 +1,26 @@
-﻿  Expedition_3.cpp
+﻿  EmptyFossil.cpp
+  Expedition_1.cpp
+  Expedition_2.cpp
+  Expedition_3.cpp
+  Fossils.cpp
+D:\GitHub\Paleontologist-simulator-2.0\Paleontologist-simulator-2.0\Paleontologist simulator 2.0\Paleontologist simulator 2.0\Fossils.cpp(12,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\GitHub\Paleontologist-simulator-2.0\Paleontologist-simulator-2.0\Paleontologist simulator 2.0\Paleontologist simulator 2.0\Fossils.cpp(12,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\GitHub\Paleontologist-simulator-2.0\Paleontologist-simulator-2.0\Paleontologist simulator 2.0\Paleontologist simulator 2.0\Fossils.cpp(101,25): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+D:\GitHub\Paleontologist-simulator-2.0\Paleontologist-simulator-2.0\Paleontologist simulator 2.0\Paleontologist simulator 2.0\Fossils.cpp(111,25): warning C4244: -=: преобразование "float" в "int", возможна потеря данных
+D:\GitHub\Paleontologist-simulator-2.0\Paleontologist-simulator-2.0\Paleontologist simulator 2.0\Paleontologist simulator 2.0\Fossils.cpp(133,24): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+D:\GitHub\Paleontologist-simulator-2.0\Paleontologist-simulator-2.0\Paleontologist simulator 2.0\Paleontologist simulator 2.0\Fossils.cpp(143,24): warning C4244: -=: преобразование "float" в "int", возможна потеря данных
+D:\GitHub\Paleontologist-simulator-2.0\Paleontologist-simulator-2.0\Paleontologist simulator 2.0\Paleontologist simulator 2.0\Fossils.cpp(165,23): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+D:\GitHub\Paleontologist-simulator-2.0\Paleontologist-simulator-2.0\Paleontologist simulator 2.0\Paleontologist simulator 2.0\Fossils.cpp(175,23): warning C4244: -=: преобразование "float" в "int", возможна потеря данных
+  Mammoth.cpp
+  Neanderthal.cpp
+  PlayerController.cpp
+D:\GitHub\Paleontologist-simulator-2.0\Paleontologist-simulator-2.0\Paleontologist simulator 2.0\Paleontologist simulator 2.0\PlayerController.cpp(76,28): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+  Pterodactyl.cpp
+  Tyrannosaurus.cpp
+  main.cpp
   Создание кода
-  3 of 516 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+  3 of 515 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    13 functions had inline decision re-evaluated but remain unchanged
+    16 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   Paleontologist simulator 2.0.vcxproj -> D:\GitHub\Paleontologist-simulator-2.0\Paleontologist-simulator-2.0\Paleontologist simulator 2.0\x64\Release\Paleontologist simulator 2.0.exe

@@ -209,7 +209,7 @@ void Fossils::Update(float time)
 	}	
 	else if (shouldChangeLandHand && landChangeTimer.getElapsedTime().asSeconds() >= 1.0f && ImmersionLevel == 0)
 	{
-		DrawLandLevel0();
+		DrawLandLevel0(true);
 		shouldChangeLandHand = false;
 	}
 

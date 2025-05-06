@@ -25,10 +25,13 @@ public:
     {
         LandSprite.setTextureRect(sf::IntRect(0, 206, 270, 203));
     }
-    void DrawLandLevel0() override
+    void DrawLandLevel0(bool Right) override
     {
         LandSprite.setTextureRect(sf::IntRect(810, 0, 270, 203));
-        TyrannosaurusBones++;
+        if (Right == true)
+        {
+            TyrannosaurusBones++;
+        }
     }
 };
 

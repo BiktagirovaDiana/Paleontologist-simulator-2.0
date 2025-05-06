@@ -32,9 +32,12 @@ void Base::handleEvent(sf::Event& event, sf::RenderWindow& window)
 			//координаты окна
 			sf::Vector2f windowPos = window.mapPixelToCoords(mousePos);
 			{
-				if (IconHomeSprite.getGlobalBounds().contains(windowPos)) {
+				if (IconHomeSprite.getGlobalBounds().contains(windowPos)) 
+				{
 					CheckMenu = true;
 					Game.SaveGame();
+
+					
 				}
 			}
 		}
@@ -57,6 +60,16 @@ void Base::update(float time)
 	else 
 	{
 		CheckExpeditions = true;
+		int n = In.getCash();
+		n -= 150;
+		if (n > 1)
+		{
+			In.BuyExpedition();
+
+		}
+		else {
+			CheckLose = true;
+		}
 	}
 
 }
