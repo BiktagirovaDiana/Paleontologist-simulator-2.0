@@ -138,6 +138,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Base.cpp" />
+    <ClCompile Include="EmptyFossil.cpp" />
     <ClCompile Include="Expedition_1.cpp" />
     <ClCompile Include="Fossils.cpp" />
     <ClCompile Include="Game.cpp" />
@@ -156,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base.h" />
+    <ClInclude Include="EmptyFossil.h" />
     <ClInclude Include="Expedition_1.h" />
     <ClInclude Include="Fossils.h" />
     <ClInclude Include="Game.h" />

@@ -9,6 +9,7 @@
 #include "Tyrannosaurus.h"
 #include "Mammoth.h"
 #include "Neanderthal.h"
+#include "EmptyFossil.h"
 
 class Expedition_1 : public Scene {
 public:
@@ -28,6 +29,7 @@ private:
     Tyrannosaurus Tyrannosaurus;
     Mammoth Mammoth;
     Neanderthal Neanderthal;
+    EmptyFossil Fossil;
 
     sf::FloatRect TransitionBase;
 };

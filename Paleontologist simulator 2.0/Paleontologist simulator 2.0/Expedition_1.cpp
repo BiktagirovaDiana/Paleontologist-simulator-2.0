@@ -2,7 +2,7 @@
 
 
 
-Expedition_1::Expedition_1(): Pterodactyl(95, 550), Tyrannosaurus(1610, 270), Mammoth(1405, 820), Neanderthal(470, 855)
+Expedition_1::Expedition_1(): Pterodactyl(95, 550), Tyrannosaurus(1610, 270), Mammoth(1405, 820), Neanderthal(470, 855), Fossil(1000, 500)
 {
 	BackgroundTexture.loadFromFile("Background_Expedition_1.png");
 	BackgroundSprite.setTexture(BackgroundTexture);
@@ -18,6 +18,7 @@ void Expedition_1::handleEvent(sf::Event& event, sf::RenderWindow& window)
 	Tyrannosaurus.ToolsControl(event);
 	Mammoth.ToolsControl(event);
 	Neanderthal.ToolsControl(event);
+	Fossil.ToolsControl(event);
 }
 void Expedition_1::update(float time) 
 {
@@ -35,6 +36,9 @@ void Expedition_1::update(float time)
 	Neanderthal.Update(time);
 	Neanderthal.UpdateTrigger(Player.getSprite());
 
+	Fossil.Update(time);
+	Fossil.UpdateTrigger(Player.getSprite());
+
 	if (TransitionBase.contains(Player.getPosition()))
 	{
 		CheckBase = true;
@@ -50,6 +54,7 @@ void Expedition_1::draw(sf::RenderWindow& window, sf::View GameView, sf::View UI
 	Tyrannosaurus.draw(window);
 	Mammoth.draw(window);
 	Neanderthal.draw(window);
+	Fossil.draw(window);
 
 	Player.draw(window);
 
