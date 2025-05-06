@@ -1,11 +1,7 @@
-﻿  Expedition_1.cpp
-  Expedition_2.cpp
-  Expedition_3.cpp
-  Expeditions.cpp
-  main.cpp
+﻿  Expedition_3.cpp
   Создание кода
-  19 of 516 functions ( 3.7%) were compiled, the rest were copied from previous compilation.
+  3 of 516 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    43 functions had inline decision re-evaluated but remain unchanged
+    13 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   Paleontologist simulator 2.0.vcxproj -> D:\GitHub\Paleontologist-simulator-2.0\Paleontologist-simulator-2.0\Paleontologist simulator 2.0\x64\Release\Paleontologist simulator 2.0.exe

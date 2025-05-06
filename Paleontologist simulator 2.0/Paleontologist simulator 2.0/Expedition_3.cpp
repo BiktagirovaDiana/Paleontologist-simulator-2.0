@@ -5,6 +5,7 @@ Expedition_3::Expedition_3() : Mammoth(90, 550), Neanderthal(1410, 820), Fossil(
 	BackgroundTexture.loadFromFile("Background_ExpeditionTundra.png");
 	BackgroundSprite.setTexture(BackgroundTexture);
 
+	TransitionBase = sf::FloatRect(1900, 0, 20, 1000);
 }
 void Expedition_3::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
