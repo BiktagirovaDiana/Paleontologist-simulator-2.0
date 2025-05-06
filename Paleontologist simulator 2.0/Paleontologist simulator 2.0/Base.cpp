@@ -5,7 +5,7 @@ Base::Base()
 	BackgroundTexture.loadFromFile("Background_Base.png");
 	BackgroundSprite.setTexture(BackgroundTexture);
 
-	TransitionExpedition1 = sf::FloatRect(1400, 900, 300, 200);
+	//TransitionExpedition1 = sf::FloatRect(1400, 900, 300, 200);
 	TransitionMuseum = sf::FloatRect(1400, 0, 300, 10);
 	TransitionShop = sf::FloatRect(220, 0, 300, 10);
 
@@ -14,6 +14,11 @@ Base::Base()
 	IconHomeSprite.setTextureRect(sf::IntRect(590, 0, 200, 200));
 	IconHomeSprite.setScale(0.75, 0.75);
 	IconHomeSprite.setPosition(1750, 20);
+
+	BusTexture.loadFromFile("Bus.png");
+	BusSprite.setTexture(BusTexture);
+	BusSprite.setScale(0.75, 0.75);
+	BusSprite.setPosition(700, 700);
 }
 void Base::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
@@ -38,11 +43,8 @@ void Base::handleEvent(sf::Event& event, sf::RenderWindow& window)
 void Base::update(float time)
 {
 	Player.Update(time);
+	Base::UpdateTrigger(Player.getSprite());
 
-	if (TransitionExpedition1.contains(Player.getPosition()))
-	{
-		CheckExpedition1 = true;
-	}
 	if (TransitionMuseum.contains(Player.getPosition()))
 	{
 		CheckMuseum = true;
@@ -51,12 +53,23 @@ void Base::update(float time)
 	{
 		CheckShop = true;
 	}
+	if (!Trigger) return;
+	else 
+	{
+		CheckExpeditions = true;
+	}
+
+}
+void Base::UpdateTrigger(const sf::Sprite& playerSprite)
+{
+	Trigger = BusSprite.getGlobalBounds().intersects(playerSprite.getGlobalBounds());
 }
 void Base::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
 {
 	window.setView(GameView);
 	window.draw(BackgroundSprite);
 	Player.draw(window);
+	window.draw(BusSprite);
 
 	//sf::RectangleShape expeditionRect, museumRect, shopRect;
 

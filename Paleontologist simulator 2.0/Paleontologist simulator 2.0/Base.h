@@ -14,6 +14,7 @@ public:
     void handleEvent(sf::Event& event, sf::RenderWindow& window) override;
     void update(float time) override;
     void draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView) override;
+    void UpdateTrigger(const sf::Sprite& playerSprite);
 
 private:
     PlayerController Player;
@@ -22,11 +23,16 @@ private:
     sf::Texture BackgroundTexture;
     sf::Sprite BackgroundSprite;
 
-    sf::FloatRect TransitionExpedition1;
     sf::FloatRect TransitionMuseum;
     sf::FloatRect TransitionShop;
 
     sf::Texture UI4;
     sf::Sprite IconHomeSprite;
+
+    sf::Texture BusTexture;
+    sf::Sprite BusSprite;
+
+    bool Trigger = false;
+
     Game Game;
 };

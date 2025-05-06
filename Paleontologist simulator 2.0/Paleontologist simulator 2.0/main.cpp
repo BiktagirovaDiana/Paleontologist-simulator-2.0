@@ -14,10 +14,14 @@
 #include "Inventory.h"
 
 #include "Base.h"
-#include "Expedition_1.h"
 #include "Museum.h"
 #include "Shop.h"
 #include "Menu.h"
+
+#include "Expedition_1.h"
+#include "Expedition_2.h"
+#include "Expedition_3.h"
+#include "Expeditions.h"
 
 #include "Pterodactyl.h"
 #include "Tyrannosaurus.h"
@@ -26,29 +30,21 @@
 #include "Game.h"
 
 
-int LevelSatiety = 10;
-//int Cash = 0;
-
-//int TyrannosaurusBones = 0;
-//int PterodactylBones = 0;
-//int MammothBones = 0;
-//int NeanderthalBones = 0;
-//
-//int EndurancePickaxe = 100;
-//int EnduranceShovel = 100;
-//int EnduranceBrush = 100; 
-
 bool CheckBase = false;
-bool CheckExpedition1 = false;
 bool CheckMuseum = false;
 bool CheckShop = false;
 bool CheckMenu = false;
 bool CheckLose = false;
+bool CheckExpeditions = false;
+bool CheckExpedition1 = false;
+bool CheckExpedition2 = false;
+bool CheckExpedition3 = false;
+
 
 bool isLose = false;
 
 
-enum class GameState { Menu, Base, Expedition_1, Museum , Shop};
+enum class GameState { Menu, Base, Museum , Shop, Expedition_1, Expedition_2, Expedition_3, Expeditions};
 
 
 int main()
@@ -86,6 +82,7 @@ int main()
 		while (window.pollEvent(ev))
 		{
 
+
 			switch (ev.type)
 			{
 			case sf::Event::Closed:
@@ -97,22 +94,19 @@ int main()
 
 			if (ev.type == sf::Event::KeyPressed) {
 
-				/*if (ev.key.code == sf::Keyboard::O) {
-					In.AddStew();
-					In.AddDoshirak();
-				}
-				if (ev.key.code == sf::Keyboard::I) {
-					State = GameState::Menu;
-					currentScene = std::make_unique<Menu>();
-					CheckMenu = false;
-				}*/
-				if (ev.type == sf::Event::KeyPressed && ev.key.code == sf::Keyboard::F)
+				if (ev.key.code == sf::Keyboard::F)
 				{
 					In.EatingDoshik();
 				}
-				if (ev.type == sf::Event::KeyPressed && ev.key.code == sf::Keyboard::G)
+				if (ev.key.code == sf::Keyboard::G)
 				{
 					In.EatingStew();
+				}
+				if (ev.key.code == sf::Keyboard::I)
+				{
+					State = GameState::Expedition_3;
+					currentScene = std::make_unique<Expedition_3>();
+					CheckExpedition3 = false;
 				}
 			}
 			if (CheckExpedition1) 
@@ -120,6 +114,18 @@ int main()
 				State = GameState::Expedition_1;
 				currentScene = std::make_unique<Expedition_1>();
 				CheckExpedition1 = false;
+			}
+			if (CheckExpedition2)
+			{
+				State = GameState::Expedition_2;
+				currentScene = std::make_unique<Expedition_2>();
+				CheckExpedition2 = false;
+			}
+			if (CheckExpedition3)
+			{
+				State = GameState::Expedition_3;
+				currentScene = std::make_unique<Expedition_3>();
+				CheckExpedition3 = false;
 			}
 			if (CheckBase)
 			{
@@ -153,6 +159,12 @@ int main()
 				currentScene = std::make_unique<Menu>();
 				CheckMenu = false;
 			}
+			if (CheckExpeditions)
+			{
+				State = GameState::Expeditions;
+				currentScene = std::make_unique<Expeditions>();
+				CheckExpeditions = false;
+			}
 
 			currentScene->handleEvent(ev, window);
 			
@@ -163,8 +175,4 @@ int main()
 		currentScene->draw(window,GameView, UIView);
 		window.display();
 	}
-}
-void Lose() 
-{
-	                
 }

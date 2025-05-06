@@ -2,11 +2,14 @@
 #include <SFML/Graphics.hpp>
 
 extern bool CheckBase;
-extern bool CheckExpedition1;
 extern bool CheckMuseum;
 extern bool CheckShop;
 extern bool CheckMenu;
 extern bool CheckLose;
+extern bool CheckExpedition1;
+extern bool CheckExpedition2;
+extern bool CheckExpedition3;
+extern bool CheckExpeditions;
 
 class Scene {
 public:

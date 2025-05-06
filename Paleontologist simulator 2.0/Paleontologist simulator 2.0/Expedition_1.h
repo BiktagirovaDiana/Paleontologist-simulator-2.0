@@ -18,6 +18,8 @@ public:
     void update(float deltaTime) override;
     void draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView) override;
 
+
+
 private:
     sf::Texture BackgroundTexture;
     sf::Sprite BackgroundSprite;
@@ -25,11 +27,10 @@ private:
     PlayerController Player;
     UI Text;
  
-    Pterodactyl Pterodactyl;
-    Tyrannosaurus Tyrannosaurus;
-    Mammoth Mammoth;
     Neanderthal Neanderthal;
+    Tyrannosaurus Tyrannosaurus;
     EmptyFossil Fossil;
 
     sf::FloatRect TransitionBase;
+
 };

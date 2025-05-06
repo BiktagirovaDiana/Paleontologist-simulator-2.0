@@ -49,10 +49,8 @@ void Fossils::ToolsControl(sf::Event& ev)
 {
 	if (ev.type == sf::Event::KeyPressed)
 	{
-		if (!Trigger) 
-		{  
-			return;
-		};
+		if (!Trigger) return;
+
 		if (isToolDelayActive && toolDelayTimer.getElapsedTime().asSeconds() < 1.0f) //Задержка для использования инструментов
 		{
 			return;

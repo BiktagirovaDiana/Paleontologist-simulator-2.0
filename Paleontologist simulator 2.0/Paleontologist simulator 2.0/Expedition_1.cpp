@@ -1,40 +1,30 @@
 #include "Expedition_1.h"
 
-
-
-Expedition_1::Expedition_1(): Pterodactyl(95, 550), Tyrannosaurus(1610, 270), Mammoth(1405, 820), Neanderthal(470, 855), Fossil(1000, 500)
+Expedition_1::Expedition_1(): Neanderthal(250, 540), Tyrannosaurus(1450, 280), Fossil(1410, 680)
 {
-	BackgroundTexture.loadFromFile("Background_Expedition_1.png");
+	BackgroundTexture.loadFromFile("Background_ExpeditionPlain.png");
 	BackgroundSprite.setTexture(BackgroundTexture);
 
-	TransitionBase = sf::FloatRect(800, 0, 300, 20);
+	TransitionBase = sf::FloatRect(0, 0, 2000, 20);
 	
 }
 void Expedition_1::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
 	Player.PlayerMovement(event);
 
-	Pterodactyl.ToolsControl(event);
-	Tyrannosaurus.ToolsControl(event);
-	Mammoth.ToolsControl(event);
 	Neanderthal.ToolsControl(event);
+	Tyrannosaurus.ToolsControl(event);
 	Fossil.ToolsControl(event);
 }
 void Expedition_1::update(float time) 
 {
 	Player.Update(time);
 
-	Pterodactyl.Update(time);
-	Pterodactyl.UpdateTrigger(Player.getSprite());
+	Neanderthal.Update(time);
+	Neanderthal.UpdateTrigger(Player.getSprite());
 
 	Tyrannosaurus.Update(time);
 	Tyrannosaurus.UpdateTrigger(Player.getSprite());
-
-	Mammoth.Update(time);
-	Mammoth.UpdateTrigger(Player.getSprite());
-
-	Neanderthal.Update(time);
-	Neanderthal.UpdateTrigger(Player.getSprite());
 
 	Fossil.Update(time);
 	Fossil.UpdateTrigger(Player.getSprite());
@@ -47,13 +37,10 @@ void Expedition_1::update(float time)
 void Expedition_1::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
 {
 	window.setView(GameView);
-	//window.setView(window.getDefaultView());
 	window.draw(BackgroundSprite);
 
-	Pterodactyl.draw(window);
-	Tyrannosaurus.draw(window);
-	Mammoth.draw(window);
 	Neanderthal.draw(window);
+	Tyrannosaurus.draw(window);
 	Fossil.draw(window);
 
 	Player.draw(window);

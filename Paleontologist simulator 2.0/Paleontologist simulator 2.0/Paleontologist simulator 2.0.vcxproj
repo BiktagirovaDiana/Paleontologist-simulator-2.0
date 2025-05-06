@@ -139,7 +139,10 @@
   <ItemGroup>
     <ClCompile Include="Base.cpp" />
     <ClCompile Include="EmptyFossil.cpp" />
+    <ClCompile Include="Expeditions.cpp" />
     <ClCompile Include="Expedition_1.cpp" />
+    <ClCompile Include="Expedition_2.cpp" />
+    <ClCompile Include="Expedition_3.cpp" />
     <ClCompile Include="Fossils.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Inventory.cpp" />
@@ -158,7 +161,10 @@
   <ItemGroup>
     <ClInclude Include="Base.h" />
     <ClInclude Include="EmptyFossil.h" />
+    <ClInclude Include="Expeditions.h" />
     <ClInclude Include="Expedition_1.h" />
+    <ClInclude Include="Expedition_2.h" />
+    <ClInclude Include="Expedition_3.h" />
     <ClInclude Include="Fossils.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Inventory.h" />
