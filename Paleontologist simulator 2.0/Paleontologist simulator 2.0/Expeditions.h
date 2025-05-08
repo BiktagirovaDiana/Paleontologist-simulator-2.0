@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "Scene.h"
+#include "Inventory.h"
 
 class Expeditions : public Scene
 {
@@ -11,8 +12,8 @@ public:
     void draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView) override;
 private:
 
-	sf::Texture BackgroundTexture;
-	sf::Sprite BackgroundSprite;
+    sf::Texture BackgroundTexture;
+    sf::Sprite BackgroundSprite;
 
     sf::Texture UI;
 
@@ -25,6 +26,6 @@ private:
     sf::Text PlainText;
     sf::Text SteppeText;
     sf::Text TundraText;
+    Inventory In;
 
 };
-

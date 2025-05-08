@@ -7,7 +7,7 @@
 #include "UI.h"
 #include "Game.h"
 
-class Base : public Scene 
+class Base : public Scene
 {
 
 public:
@@ -35,6 +35,5 @@ private:
 
     bool Trigger = false;
     Inventory In;
-    
     Game Game;
 };

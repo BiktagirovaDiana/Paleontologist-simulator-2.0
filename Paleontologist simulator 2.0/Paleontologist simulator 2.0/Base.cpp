@@ -1,11 +1,10 @@
-#include "Base.h"
+п»ї#include "Base.h"
 
-Base::Base() 
+Base::Base()
 {
 	BackgroundTexture.loadFromFile("Background_Base.png");
 	BackgroundSprite.setTexture(BackgroundTexture);
 
-	//TransitionExpedition1 = sf::FloatRect(1400, 900, 300, 200);
 	TransitionMuseum = sf::FloatRect(1400, 0, 300, 10);
 	TransitionShop = sf::FloatRect(220, 0, 300, 10);
 
@@ -22,22 +21,22 @@ Base::Base()
 }
 void Base::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
-	
+
 	Player.PlayerMovement(event);
 	if (event.type == sf::Event::MouseButtonPressed)
 	{
 		if (event.mouseButton.button == sf::Mouse::Left) {
-			//позицию клика
+			//ГЇГ®Г§ГЁГ¶ГЁГѕ ГЄГ«ГЁГЄГ 
 			sf::Vector2i mousePos = sf::Mouse::getPosition(window);
-			//координаты окна
+			//ГЄГ®Г®Г°Г¤ГЁГ­Г ГІГ» Г®ГЄГ­Г 
 			sf::Vector2f windowPos = window.mapPixelToCoords(mousePos);
 			{
-				if (IconHomeSprite.getGlobalBounds().contains(windowPos)) 
+				if (IconHomeSprite.getGlobalBounds().contains(windowPos))
 				{
 					CheckMenu = true;
 					Game.SaveGame();
 
-					
+
 				}
 			}
 		}
@@ -57,19 +56,11 @@ void Base::update(float time)
 		CheckShop = true;
 	}
 	if (!Trigger) return;
-	else 
+
+	else
 	{
 		CheckExpeditions = true;
-		int n = In.getCash();
-		n -= 150;
-		if (n > 1)
-		{
-			In.BuyExpedition();
-
-		}
-		else {
-			CheckLose = true;
-		}
+		
 	}
 
 }
@@ -84,27 +75,7 @@ void Base::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
 	Player.draw(window);
 	window.draw(BusSprite);
 
-	//sf::RectangleShape expeditionRect, museumRect, shopRect;
 
-	//// Настройка прямоугольника для Expedition1
-	//expeditionRect.setSize(sf::Vector2f(TransitionExpedition1.width, TransitionExpedition1.height));
-	//expeditionRect.setPosition(TransitionExpedition1.left, TransitionExpedition1.top);
-	//expeditionRect.setFillColor(sf::Color(255, 0, 0, 100)); // Полупрозрачный красный
-
-	//// Настройка прямоугольника для Museum
-	//museumRect.setSize(sf::Vector2f(TransitionMuseum.width, TransitionMuseum.height));
-	//museumRect.setPosition(TransitionMuseum.left, TransitionMuseum.top);
-	//museumRect.setFillColor(sf::Color(0, 255, 0, 100)); // Полупрозрачный зеленый
-
-	//// Настройка прямоугольника для Shop
-	//shopRect.setSize(sf::Vector2f(TransitionShop.width, TransitionShop.height));
-	//shopRect.setPosition(TransitionShop.left, TransitionShop.top);
-	//shopRect.setFillColor(sf::Color(0, 0, 255, 100)); // Полупрозрачный синий
-
-	//// Отрисовка прямоугольников
-	//window.draw(expeditionRect);
-	//window.draw(museumRect);
-	//window.draw(shopRect);
 
 	window.setView(UIView);
 	Text.draw(window);
