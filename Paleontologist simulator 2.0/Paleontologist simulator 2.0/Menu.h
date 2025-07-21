@@ -30,8 +30,6 @@ private:
 
 	sf::Text LoseText;
 	Game Game;
-
-	//bool isLose = false;
 };
 
 

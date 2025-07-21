@@ -117,7 +117,7 @@ void Shop::handleEvent(sf::Event& event, sf::RenderWindow& window)
 
 			else if (ExitSprite.getGlobalBounds().contains(windowPos))
 			{
-				CheckBase = true;
+				checkBase_ = true;
 			}
 		}
 	}

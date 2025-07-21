@@ -8,8 +8,8 @@ Base::Base()
 	TransitionMuseum = sf::FloatRect(1400, 0, 300, 10);
 	TransitionShop = sf::FloatRect(220, 0, 300, 10);
 
-	UI4.loadFromFile("UI4.png");
-	IconHomeSprite.setTexture(UI4);
+	UI.loadFromFile("UI4.png");
+	IconHomeSprite.setTexture(UI);
 	IconHomeSprite.setTextureRect(sf::IntRect(590, 0, 200, 200));
 	IconHomeSprite.setScale(0.75, 0.75);
 	IconHomeSprite.setPosition(1750, 20);
@@ -22,7 +22,7 @@ Base::Base()
 void Base::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
 
-	Player.PlayerMovement(event);
+	player_.PlayerMovement(event);
 	if (event.type == sf::Event::MouseButtonPressed)
 	{
 		if (event.mouseButton.button == sf::Mouse::Left) {
@@ -33,7 +33,7 @@ void Base::handleEvent(sf::Event& event, sf::RenderWindow& window)
 			{
 				if (IconHomeSprite.getGlobalBounds().contains(windowPos))
 				{
-					CheckMenu = true;
+					checkMenu_ = true;
 					Game.SaveGame();
 
 
@@ -44,40 +44,40 @@ void Base::handleEvent(sf::Event& event, sf::RenderWindow& window)
 }
 void Base::update(float time)
 {
-	Player.Update(time);
-	Base::UpdateTrigger(Player.getSprite());
+	player_.Update(time);
+	Base::UpdateTrigger(player_.getSprite());
 
-	if (TransitionMuseum.contains(Player.getPosition()))
+	if (TransitionMuseum.contains(player_.getPosition()))
 	{
-		CheckMuseum = true;
+		checkMuseum_ = true;
 	}
-	if (TransitionShop.contains(Player.getPosition()))
+	if (TransitionShop.contains(player_.getPosition()))
 	{
-		CheckShop = true;
+		checkShop_ = true;
 	}
-	if (!Trigger) return;
+	if (!trigger_) return;
 
 	else
 	{
-		CheckExpeditions = true;
+		checkExpeditions_ = true;
 		
 	}
 
 }
 void Base::UpdateTrigger(const sf::Sprite& playerSprite)
 {
-	Trigger = BusSprite.getGlobalBounds().intersects(playerSprite.getGlobalBounds());
+	trigger_ = BusSprite.getGlobalBounds().intersects(playerSprite.getGlobalBounds());
 }
 void Base::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
 {
 	window.setView(GameView);
 	window.draw(BackgroundSprite);
-	Player.draw(window);
+	player_.draw(window);
 	window.draw(BusSprite);
 
 
 
 	window.setView(UIView);
-	Text.draw(window);
+	text_.draw(window);
 	window.draw(IconHomeSprite);
 }

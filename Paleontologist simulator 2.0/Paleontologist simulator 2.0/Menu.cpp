@@ -68,13 +68,13 @@ void Menu::handleEvent(sf::Event& event, sf::RenderWindow& window)
 			if (NewGameIcon.getGlobalBounds().contains(windowPos))
 			{
 				Game.NewGame();
-				CheckBase = true;
+				checkBase_ = true;
 				isLose = false;
 			}
 			else if (ContinueGameIcon.getGlobalBounds().contains(windowPos))
 			{
 				Game.LoadGame();
-				CheckBase = true;
+				checkBase_ = true;
 			}
 			else if (ExitGameIcon.getGlobalBounds().contains(windowPos))
 			{

@@ -3,8 +3,6 @@
 #include <SFML/Graphics.hpp>
 #include "Inventory.h"
 
-
-
 class UI : public Inventory
 {
 public:
@@ -82,10 +80,6 @@ protected:
 	sf::Texture IconDoshirakTexture;
 	sf::Sprite IconDoshirakSprite;
 	std::ostringstream DoshirakString;
-
-	/*sf::Texture UI4;
-	sf::Sprite IconHomeSprite;*/
-
 };
 
 

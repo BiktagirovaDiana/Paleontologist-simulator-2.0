@@ -18,8 +18,8 @@ public:
     void UpdateTrigger(const sf::Sprite& playerSprite);
 
 private:
-    PlayerController Player;
-    UI Text;
+    PlayerController player_;
+    UI text_;
 
     sf::Texture BackgroundTexture;
     sf::Sprite BackgroundSprite;
@@ -27,13 +27,13 @@ private:
     sf::FloatRect TransitionMuseum;
     sf::FloatRect TransitionShop;
 
-    sf::Texture UI4;
+    sf::Texture UI;
     sf::Sprite IconHomeSprite;
 
     sf::Texture BusTexture;
     sf::Sprite BusSprite;
 
-    bool Trigger = false;
+    bool trigger_ = false;
     Inventory In;
     Game Game;
 };

@@ -30,15 +30,15 @@
 #include "Game.h"
 
 
-bool CheckBase = false;
-bool CheckMuseum = false;
-bool CheckShop = false;
-bool CheckMenu = false;
-bool CheckLose = false;
-bool CheckExpeditions = false;
-bool CheckExpedition1 = false;
-bool CheckExpedition2 = false;
-bool CheckExpedition3 = false;
+bool checkBase_ = false;
+bool checkMuseum_ = false;
+bool checkShop_ = false;
+bool checkMenu_ = false;
+bool checkLose_ = false;
+bool checkExpeditions_ = false;
+bool checkExpedition1_ = false;
+bool checkExpedition2_ = false;
+bool checkExpedition3_ = false;
 
 
 bool isLose = false;
@@ -106,64 +106,64 @@ int main()
 				{
 					State = GameState::Expedition_3;
 					currentScene = std::make_unique<Expedition_3>();
-					CheckExpedition3 = false;
+					checkExpedition3_ = false;
 				}
 			}
-			if (CheckExpedition1) 
+			if (checkExpedition1_) 
 			{
 				State = GameState::Expedition_1;
 				currentScene = std::make_unique<Expedition_1>();
-				CheckExpedition1 = false;
+				checkExpedition1_ = false;
 			}
-			if (CheckExpedition2)
+			if (checkExpedition2_)
 			{
 				State = GameState::Expedition_2;
 				currentScene = std::make_unique<Expedition_2>();
-				CheckExpedition2 = false;
+				checkExpedition2_ = false;
 			}
-			if (CheckExpedition3)
+			if (checkExpedition3_)
 			{
 				State = GameState::Expedition_3;
 				currentScene = std::make_unique<Expedition_3>();
-				CheckExpedition3 = false;
+				checkExpedition3_ = false;
 			}
-			if (CheckBase)
+			if (checkBase_)
 			{
 				State = GameState::Base;
 				currentScene = std::make_unique<Base>();
-				CheckBase = false;
+				checkBase_ = false;
 			}
-			if (CheckMuseum) 
+			if (checkMuseum_) 
 			{
 				State = GameState::Museum;
 				currentScene = std::make_unique<Museum>();
-				CheckMuseum = false;
+				checkMuseum_ = false;
 			}
-			if (CheckShop) 
+			if (checkShop_) 
 			{
 				State = GameState::Shop;
 				currentScene = std::make_unique<Shop>();
-				CheckShop = false;
+				checkShop_ = false;
 			}
-			if (CheckMenu)
+			if (checkMenu_)
 			{
 				State = GameState::Menu;
 				currentScene = std::make_unique<Menu>();
-				CheckMenu = false;
+				checkMenu_ = false;
 			}
-			if (CheckLose) 
+			if (checkLose_) 
 			{
 				isLose = true;
 				Me.lose();
 				State = GameState::Menu;
 				currentScene = std::make_unique<Menu>();
-				CheckMenu = false;
+				checkMenu_ = false;
 			}
-			if (CheckExpeditions)
+			if (checkExpeditions_)
 			{
 				State = GameState::Expeditions;
 				currentScene = std::make_unique<Expeditions>();
-				CheckExpeditions = false;
+				checkExpeditions_ = false;
 			}
 
 			currentScene->handleEvent(ev, window);

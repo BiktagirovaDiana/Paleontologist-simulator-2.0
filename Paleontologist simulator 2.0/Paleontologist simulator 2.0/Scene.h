@@ -1,15 +1,15 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
-extern bool CheckBase;
-extern bool CheckMuseum;
-extern bool CheckShop;
-extern bool CheckMenu;
-extern bool CheckLose;
-extern bool CheckExpedition1;
-extern bool CheckExpedition2;
-extern bool CheckExpedition3;
-extern bool CheckExpeditions;
+extern bool checkBase_;
+extern bool checkMuseum_;
+extern bool checkShop_;
+extern bool checkMenu_;
+extern bool checkLose_;
+extern bool checkExpedition1_;
+extern bool checkExpedition2_;
+extern bool checkExpedition3_;
+extern bool checkExpeditions_;
 
 class Scene {
 public:

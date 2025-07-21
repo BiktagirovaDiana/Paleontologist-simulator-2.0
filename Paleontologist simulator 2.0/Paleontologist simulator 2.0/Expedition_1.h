@@ -18,8 +18,6 @@ public:
     void update(float deltaTime) override;
     void draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView) override;
 
-
-
 private:
     sf::Texture BackgroundTexture;
     sf::Sprite BackgroundSprite;

@@ -55,21 +55,21 @@ void Expeditions::handleEvent(sf::Event& event, sf::RenderWindow& window)
 
 			if ((PlainSprite.getGlobalBounds().contains(windowPos)) && ((n - 150)> 0))
 			{
-				CheckExpedition1 = true;
+				checkExpedition1_ = true;
 				In.BuyExpedition();
 			}	
 			else if ((SteppeSprite.getGlobalBounds().contains(windowPos)) && ((n - 150) > 0))
 			{
-				CheckExpedition2 = true;
+				checkExpedition2_ = true;
 				In.BuyExpedition();
 			}
 			else if ((TundraSprite.getGlobalBounds().contains(windowPos)) && ((n - 150) > 0))
 			{
-				CheckExpedition3 = true;
+				checkExpedition3_ = true;
 				In.BuyExpedition();
 			}
 			else if ((n - 150 < 0)) {
-				CheckLose = true;
+				checkLose_ = true;
 			}
 		}
 	}

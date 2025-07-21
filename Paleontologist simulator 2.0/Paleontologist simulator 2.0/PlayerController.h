@@ -27,10 +27,10 @@ private:
 	sf::Sprite PlayerSprite;
 
 	enum Direction { Up, Down, Left, Right };
-	float speedPlayer;
-	Direction currentDir;
-	bool Anim;
-	int frame = 0;
-	bool isDead = false;
+	float speedPlayer_;
+	Direction currentDir_;
+	bool anim_;
+	int frame_ = 0;
+	bool isDead_ = false;
 };
 

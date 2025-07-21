@@ -3,35 +3,12 @@
 class Mammoth : public Fossils
 {
 public:
-    Mammoth(int x, int y) : Fossils(x, y) {} 
+    Mammoth(int x, int y) : Fossils(x, y) {}
 
-    void DrawLandLevel4() override
-    {
-        LandSprite.setTextureRect(sf::IntRect(540, 0, 270, 203));
-    }
-
-    void DrawLandLevel3() override
-    {
-        LandSprite.setTextureRect(sf::IntRect(270, 0, 270, 203));
-    }
-
-    void DrawLandLevel2() override
-    {
-        LandSprite.setTextureRect(sf::IntRect(540, 812, 270, 203));
-    }
-
-    void DrawLandLevel1() override
-    {
-        LandSprite.setTextureRect(sf::IntRect(0, 812, 270, 203));
-    }
-    void DrawLandLevel0(bool Right) override
-    {
-        LandSprite.setTextureRect(sf::IntRect(810, 0, 270, 203));
-        if (Right == true) 
-        {
-            MammothBones++;
-        }
-        
-    }
+    void DrawLandLevel4() override;
+    void DrawLandLevel3() override;
+    void DrawLandLevel2() override;
+    void DrawLandLevel1() override;
+    void DrawLandLevel0(bool Right);
 };
 

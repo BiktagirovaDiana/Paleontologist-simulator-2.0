@@ -3,7 +3,7 @@
 
 
 
-PlayerController::PlayerController() :currentDir(Down), speedPlayer(150), frame(0), Anim(false)
+PlayerController::PlayerController() :currentDir_(Down), speedPlayer_(150), frame_(0), anim_(false)
 {
 	TexturePlayer.loadFromFile("Player1.png");
 	
@@ -28,30 +28,30 @@ void PlayerController::PlayerMovement(sf::Event& ev)
         
         if (ev.key.code == sf::Keyboard::W)
         {
-            currentDir = Up;
-            Anim = true;
+            currentDir_ = Up;
+            anim_ = true;
         }
         if (ev.key.code == sf::Keyboard::S) 
         {
-            currentDir = Down;
-            Anim = true;
+            currentDir_ = Down;
+            anim_ = true;
         }
         if (ev.key.code == sf::Keyboard::A)
         {
-            currentDir = Left;
-            Anim = true;
+            currentDir_ = Left;
+            anim_ = true;
         }
         if (ev.key.code == sf::Keyboard::D) 
         {
-            currentDir = Right;
-            Anim = true;
+            currentDir_ = Right;
+            anim_ = true;
         }
         
     }
     else if (ev.type == sf::Event::KeyReleased) 
     {
-        Anim = false;
-        frame = 0;
+        anim_ = false;
+        frame_ = 0;
     }
 }
 void PlayerController::Update(float time)
@@ -59,62 +59,62 @@ void PlayerController::Update(float time)
     
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-        PlayerSprite.move(0, -speedPlayer * time);
+        PlayerSprite.move(0, -speedPlayer_ * time);
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-        PlayerSprite.move(0, speedPlayer * time);
+        PlayerSprite.move(0, speedPlayer_ * time);
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-        PlayerSprite.move(-speedPlayer * time, 0);
+        PlayerSprite.move(-speedPlayer_ * time, 0);
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-        PlayerSprite.move(speedPlayer * time, 0);
+        PlayerSprite.move(speedPlayer_ * time, 0);
     }
 
-    if (Anim) //Анимация передвижения
+    if (anim_) //Анимация передвижения
     {
-        frame += speedAnim * time;
-        if (frame > 8)
+        frame_ += speedAnim * time;
+        if (frame_ > 8)
         {
-            frame -= 8;
+            frame_ -= 8;
         }
 
-        switch (currentDir) 
+        switch (currentDir_) 
         {
         case Up:
-            PlayerSprite.setTextureRect(sf::IntRect(frame * 256, 256 * 3, 256, 256));
+            PlayerSprite.setTextureRect(sf::IntRect(frame_ * 256, 256 * 3, 256, 256));
             break;
         case Down:
-            PlayerSprite.setTextureRect(sf::IntRect(frame * 256, 0, 256, 256));
+            PlayerSprite.setTextureRect(sf::IntRect(frame_ * 256, 0, 256, 256));
             break;
         case Left:
-            PlayerSprite.setTextureRect(sf::IntRect(frame * 256, 256 * 1, 256, 256));
+            PlayerSprite.setTextureRect(sf::IntRect(frame_ * 256, 256 * 1, 256, 256));
             break;
         case Right:
-            PlayerSprite.setTextureRect(sf::IntRect(frame * 256, 256 * 2, 256, 256));
+            PlayerSprite.setTextureRect(sf::IntRect(frame_ * 256, 256 * 2, 256, 256));
             break;
         }
     }
     else //Статичные кадры
     {
         
-        switch (currentDir) 
+        switch (currentDir_) 
         {
         case Up:
             PlayerSprite.setTextureRect(sf::IntRect(0, 256 * 3, 256, 256));
-            if (isDead) PlayerSprite.setColor(sf::Color(255, 0, 0, 255));
+            if (isDead_) PlayerSprite.setColor(sf::Color(255, 0, 0, 255));
             break;
         case Down:
             PlayerSprite.setTextureRect(sf::IntRect(0, 0, 256, 256));
-            if (isDead) PlayerSprite.setColor(sf::Color(255, 0, 0, 255));
+            if (isDead_) PlayerSprite.setColor(sf::Color(255, 0, 0, 255));
             break;
         case Left:
             PlayerSprite.setTextureRect(sf::IntRect(0, 256 * 1, 256, 256));
-            if (isDead) PlayerSprite.setColor(sf::Color(255, 0, 0, 255));
+            if (isDead_) PlayerSprite.setColor(sf::Color(255, 0, 0, 255));
             break;
         case Right:
             PlayerSprite.setTextureRect(sf::IntRect(0, 256 * 2, 256, 256));
-            if (isDead) PlayerSprite.setColor(sf::Color(255, 0, 0, 255));
+            if (isDead_) PlayerSprite.setColor(sf::Color(255, 0, 0, 255));
             break;
         }
     }

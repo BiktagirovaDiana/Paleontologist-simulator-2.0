@@ -31,7 +31,7 @@ void Expedition_1::update(float time)
 
 	if (TransitionBase.contains(Player.getPosition()))
 	{
-		CheckBase = true;
+		checkBase_ = true;
 	}
 }
 void Expedition_1::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
