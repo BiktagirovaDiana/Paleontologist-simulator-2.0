@@ -61,8 +61,7 @@ Museum::Museum()
 void Museum::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
 	Inventory In;
-	if (event.type == sf::Event::MouseButtonPressed) 
-	{
+	if (event.type == sf::Event::MouseButtonPressed)  {
 		if (event.mouseButton.button == sf::Mouse::Left) {
 			//позицию клика
 			sf::Vector2i mousePos = sf::Mouse::getPosition(window);
@@ -70,40 +69,32 @@ void Museum::handleEvent(sf::Event& event, sf::RenderWindow& window)
 			sf::Vector2f windowPos = window.mapPixelToCoords(mousePos);
 
 
-			if (SellTyrannosaurusSprite.getGlobalBounds().contains(windowPos)) 
-			{
-				if (In.getTyrannosaurusBones() > 0)
-				{
+			if (SellTyrannosaurusSprite.getGlobalBounds().contains(windowPos))  {
+				if (In.getTyrannosaurusBones() > 0) {
 					In.SellTyrannosaurus();
 					AddLevelTyrannosaurus();
 				}
 			}
-			else if (SellPterodactylSprite.getGlobalBounds().contains(windowPos))
-			{
-				if (In.getPterodactylBones() > 0)
-				{
+			else if (SellPterodactylSprite.getGlobalBounds().contains(windowPos)) {
+				if (In.getPterodactylBones() > 0) {
 					In.SellPterodactyl ();
 					AddLevelPterodactyl();
 				}
 			}
-			else if (SellMammothSprite.getGlobalBounds().contains(windowPos))
-			{
-				if (In.getMammothBones() > 0)
-				{
+			else if (SellMammothSprite.getGlobalBounds().contains(windowPos)) {
+				if (In.getMammothBones() > 0) {
 					In.SellMammoth();
 					AddLevelMammoth();
 				}
 			}
 			else if (SellNeanderthalSprite.getGlobalBounds().contains(windowPos))
 			{
-				if (In.getNeanderthalBones() > 0)
-				{
+				if (In.getNeanderthalBones() > 0) {
 					In.SellNeanderthal();
 					AddLevelNeanderthal();
 				}
 			}
-			else if (ExitSprite.getGlobalBounds().contains(windowPos)) 
-			{
+			else if (ExitSprite.getGlobalBounds().contains(windowPos)) {
 				checkBase_ = true;
 			}
 		}

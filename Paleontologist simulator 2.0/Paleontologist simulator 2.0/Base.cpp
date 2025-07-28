@@ -23,20 +23,16 @@ void Base::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
 
 	player_.PlayerMovement(event);
-	if (event.type == sf::Event::MouseButtonPressed)
-	{
+	if (event.type == sf::Event::MouseButtonPressed) {
 		if (event.mouseButton.button == sf::Mouse::Left) {
 			//ïîçèöèþ êëèêà
 			sf::Vector2i mousePos = sf::Mouse::getPosition(window);
 			//êîîðäèíàòû îêíà
 			sf::Vector2f windowPos = window.mapPixelToCoords(mousePos);
 			{
-				if (IconHomeSprite.getGlobalBounds().contains(windowPos))
-				{
+				if (IconHomeSprite.getGlobalBounds().contains(windowPos)){
 					checkMenu_ = true;
 					Game.SaveGame();
-
-
 				}
 			}
 		}
@@ -47,20 +43,16 @@ void Base::update(float time)
 	player_.Update(time);
 	Base::UpdateTrigger(player_.getSprite());
 
-	if (TransitionMuseum.contains(player_.getPosition()))
-	{
+	if (TransitionMuseum.contains(player_.getPosition())) {
 		checkMuseum_ = true;
 	}
-	if (TransitionShop.contains(player_.getPosition()))
-	{
+	if (TransitionShop.contains(player_.getPosition())) {
 		checkShop_ = true;
 	}
 	if (!trigger_) return;
 
-	else
-	{
+	else {
 		checkExpeditions_ = true;
-		
 	}
 
 }
@@ -74,8 +66,6 @@ void Base::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
 	window.draw(BackgroundSprite);
 	player_.draw(window);
 	window.draw(BusSprite);
-
-
 
 	window.setView(UIView);
 	text_.draw(window);

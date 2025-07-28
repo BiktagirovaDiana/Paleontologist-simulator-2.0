@@ -69,8 +69,7 @@ void Shop::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
 	window.setKeyRepeatEnabled(false);
 	Inventory In;
-	if (event.type == sf::Event::MouseButtonPressed) 
-	{
+	if (event.type == sf::Event::MouseButtonPressed)  {
 		if (event.mouseButton.button == sf::Mouse::Left) {
 			//позицию клика
 			sf::Vector2i mousePos = sf::Mouse::getPosition(window);
@@ -78,45 +77,39 @@ void Shop::handleEvent(sf::Event& event, sf::RenderWindow& window)
 			sf::Vector2f windowPos = window.mapPixelToCoords(mousePos);
 
 
-			if (PickaxeSprite.getGlobalBounds().contains(windowPos))
-			{
+			if (PickaxeSprite.getGlobalBounds().contains(windowPos)) {
 				In.AddPickaxe();
 				if (In.getCash() < 1) {
 					In.DeadPlayer();
 				}
 			}
-			else if (ShovelSprite.getGlobalBounds().contains(windowPos))
-			{
+			else if (ShovelSprite.getGlobalBounds().contains(windowPos)) {
 				In.AddShovel();
 				if (In.getCash() < 1) {
 					In.DeadPlayer();
 				}
 
 			}
-			else if (BrushSprite.getGlobalBounds().contains(windowPos))
-			{
+			else if (BrushSprite.getGlobalBounds().contains(windowPos)) {
 				In.AddBrush();
 				if (In.getCash() < 1) {
 					In.DeadPlayer();
 				}
 			}
-			else if (StrewSprite.getGlobalBounds().contains(windowPos))
-			{
+			else if (StrewSprite.getGlobalBounds().contains(windowPos)) {
 				In.AddStew();
 				if (In.getCash() < 1) {
 					In.DeadPlayer();
 				}
 			}
-			else if (DoshirakSprite.getGlobalBounds().contains(windowPos))
-			{
+			else if (DoshirakSprite.getGlobalBounds().contains(windowPos)) {
 				In.AddDoshirak();
 				if (In.getCash() < 1) {
 					In.DeadPlayer();
 				}
 			}
 
-			else if (ExitSprite.getGlobalBounds().contains(windowPos))
-			{
+			else if (ExitSprite.getGlobalBounds().contains(windowPos)) {
 				checkBase_ = true;
 			}
 		}

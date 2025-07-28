@@ -54,9 +54,6 @@ int main()
 
 	sf::RenderWindow window(sf::VideoMode(1920, 1050), "Paleontologist simulator", sf::Style::Default);
 	window.setFramerateLimit(30);
-	//sf::View view = window.getDefaultView();
-	// 
-	//Defaulf - закрытие и увеличение окна, надпись и т.д.
 
 	GameState State = GameState::Menu;
 	std::unique_ptr<Scene> currentScene = std::make_unique<Menu>();
@@ -78,10 +75,8 @@ int main()
 	{
 		float time = Clock.restart().asSeconds();
 
-
 		while (window.pollEvent(ev))
 		{
-
 
 			switch (ev.type)
 			{
@@ -91,85 +86,64 @@ int main()
 				break;
 			}
 
-
 			if (ev.type == sf::Event::KeyPressed) {
 
-				if (ev.key.code == sf::Keyboard::F)
-				{
+				if (ev.key.code == sf::Keyboard::F) {
 					In.EatingDoshik();
 				}
-				if (ev.key.code == sf::Keyboard::G)
-				{
+				if (ev.key.code == sf::Keyboard::G) {
 					In.EatingStew();
 				}
-				if (ev.key.code == sf::Keyboard::I)
-				{
-					State = GameState::Expedition_3;
-					currentScene = std::make_unique<Expedition_3>();
-					checkExpedition3_ = false;
-				}
 			}
-			if (checkExpedition1_) 
-			{
+			if (checkExpedition1_) {
 				State = GameState::Expedition_1;
 				currentScene = std::make_unique<Expedition_1>();
 				checkExpedition1_ = false;
 			}
-			if (checkExpedition2_)
-			{
+			if (checkExpedition2_) {
 				State = GameState::Expedition_2;
 				currentScene = std::make_unique<Expedition_2>();
 				checkExpedition2_ = false;
 			}
-			if (checkExpedition3_)
-			{
+			if (checkExpedition3_) {
 				State = GameState::Expedition_3;
 				currentScene = std::make_unique<Expedition_3>();
 				checkExpedition3_ = false;
 			}
-			if (checkBase_)
-			{
+			if (checkBase_) {
 				State = GameState::Base;
 				currentScene = std::make_unique<Base>();
 				checkBase_ = false;
 			}
-			if (checkMuseum_) 
-			{
+			if (checkMuseum_)  {
 				State = GameState::Museum;
 				currentScene = std::make_unique<Museum>();
 				checkMuseum_ = false;
 			}
-			if (checkShop_) 
-			{
+			if (checkShop_) {
 				State = GameState::Shop;
 				currentScene = std::make_unique<Shop>();
 				checkShop_ = false;
 			}
-			if (checkMenu_)
-			{
+			if (checkMenu_) {
 				State = GameState::Menu;
 				currentScene = std::make_unique<Menu>();
 				checkMenu_ = false;
 			}
-			if (checkLose_) 
-			{
+			if (checkLose_) {
 				isLose = true;
 				Me.lose();
 				State = GameState::Menu;
 				currentScene = std::make_unique<Menu>();
 				checkMenu_ = false;
 			}
-			if (checkExpeditions_)
-			{
+			if (checkExpeditions_) {
 				State = GameState::Expeditions;
 				currentScene = std::make_unique<Expeditions>();
 				checkExpeditions_ = false;
 			}
-
 			currentScene->handleEvent(ev, window);
-			
 		}
-		
 		currentScene->update(time);
 		window.clear();
 		currentScene->draw(window,GameView, UIView);

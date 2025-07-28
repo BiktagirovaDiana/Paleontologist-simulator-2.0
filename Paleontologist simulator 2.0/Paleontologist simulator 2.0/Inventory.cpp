@@ -18,10 +18,8 @@ int Inventory::Doshirak = 0;
 
 void Inventory::EatingDoshik()
 {
-	if (Doshirak > 0)
-	{
-		if (LevelSatiety < 10)
-		{
+	if (Doshirak > 0) {
+		if (LevelSatiety < 10) {
 			Doshirak--;
 			LevelSatiety++;
 		}
@@ -31,10 +29,8 @@ void Inventory::EatingDoshik()
 
 void Inventory::EatingStew()
 {
-	if (Stew > 0)
-	{
-		if (LevelSatiety < 6)
-		{
+	if (Stew > 0) {
+		if (LevelSatiety < 6) {
 			Stew--;
 			LevelSatiety += 5;
 		}
@@ -122,34 +118,26 @@ void Inventory::BuyExpedition()
 //Добавление инструментов
 void Inventory::AddPickaxe()
 {
-	if (Cash >= 250)
-	{
+	if (Cash >= 250) {
 		EndurancePickaxe += 100;
 		Cash -= 250;
 	}
-	else
-	{
+	else {
 		//Кирка еще есть
 	}
 }
 void Inventory::AddShovel()
 {
-	if (Cash >= 150)
-	{
+	if (Cash >= 150) {
 		EnduranceShovel = 100;
 		Cash -= 150;
 	}
 }
 void Inventory::AddBrush()
 {
-	if (Cash >= 100)
-	{
+	if (Cash >= 100) {
 		EnduranceBrush = 100;
 		Cash -= 100;
-	}
-	else
-	{
-		//Кисть еще есть
 	}
 }
 void Inventory::AddStew()
@@ -160,8 +148,7 @@ void Inventory::AddStew()
 	}
 }
 void Inventory::AddDoshirak() {
-	if (Cash >= 35)
-	{
+	if (Cash >= 35) {
 		Doshirak++;
 		Cash -= 35;
 	}
@@ -170,8 +157,7 @@ void Inventory::AddDoshirak() {
 void Inventory::DamagePickaxe(int n)
 {
 	//15
-	EndurancePickaxe -= n;
-	if (EndurancePickaxe <= 0)
+	EndurancePickaxe -= n; if (EndurancePickaxe <= 0)
 	{
 		BrokePickaxe();
 	}
@@ -207,8 +193,7 @@ void Inventory::BrokeBrush()
 
 void Inventory::DeadPlayer()
 {
-	if (LevelSatiety < 1)
-	{
+	if (LevelSatiety < 1) {
 		checkLose_ = true;
 	}
 	if (Cash < 1) {

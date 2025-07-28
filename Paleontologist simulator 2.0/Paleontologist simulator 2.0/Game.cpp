@@ -7,8 +7,7 @@
 void Game::NewGame()
 {
 	std::ofstream Data("Game.txt");
-	if (Data.is_open())
-	{
+	if (Data.is_open()) {
 		Inventory::Cash = 500;
 		Inventory::LevelSatiety = 10;
 
@@ -30,8 +29,7 @@ void Game::NewGame()
 void Game::SaveGame()
 {
 	std::ofstream Data("Game.txt");
-	if (Data.is_open())
-	{
+	if (Data.is_open()) {
 		Data << Inventory::Cash << "\n";
 		Data << Inventory::LevelSatiety << "\n";
 
@@ -54,8 +52,7 @@ void Game::SaveGame()
 void Game::LoadGame()
 {
 	std::ifstream Data("Game.txt");
-	if (Data.is_open())
-	{
+	if (Data.is_open()) {
 		Data >> Inventory::Cash;
 		Data >> Inventory::LevelSatiety;
 
@@ -72,9 +69,4 @@ void Game::LoadGame()
 		Data >> Inventory::Doshirak;
 		Data.close();
 	}
-}
-
-void Game::LoseGame() 
-{
-
 }

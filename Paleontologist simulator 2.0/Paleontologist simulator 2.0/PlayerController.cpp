@@ -70,12 +70,10 @@ void PlayerController::Update(float time)
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
         PlayerSprite.move(speedPlayer_ * time, 0);
     }
-
-    if (anim_) //Анимация передвижения
-    {
+    //Анимация передвижения
+    if (anim_) {
         frame_ += speedAnim * time;
-        if (frame_ > 8)
-        {
+        if (frame_ > 8) {
             frame_ -= 8;
         }
 
@@ -118,8 +116,6 @@ void PlayerController::Update(float time)
             break;
         }
     }
-
-    
 
 }
 

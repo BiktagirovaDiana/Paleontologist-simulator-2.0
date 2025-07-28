@@ -47,37 +47,32 @@ Fossils::Fossils(int x, int y)
 };
 void Fossils::ToolsControl(sf::Event& ev)
 {
-	if (ev.type == sf::Event::KeyPressed)
-	{
+	if (ev.type == sf::Event::KeyPressed) {
 		if (!trigger_) return;
 
-		if (isToolDelayActive && toolDelayTimer.getElapsedTime().asSeconds() < 1.0f) //Задержка для использования инструментов
-		{
+		//Задержка для использования инструментов
+		if (isToolDelayActive && toolDelayTimer.getElapsedTime().asSeconds() < 1.0f)  {
 			return;
 		}
-		if (ev.key.code == sf::Keyboard::E)
-		{
+		if (ev.key.code == sf::Keyboard::E) {
 			PlayerHand = Pickaxe;
 			Excavation();
 			isToolDelayActive = true;
 			toolDelayTimer.restart();
 		}
-		else if (ev.type == sf::Event::KeyPressed && ev.key.code == sf::Keyboard::R)
-		{
+		else if (ev.type == sf::Event::KeyPressed && ev.key.code == sf::Keyboard::R) {
 			PlayerHand = Shovel;
 			Excavation();
 			isToolDelayActive = true;
 			toolDelayTimer.restart();
 		}
-		else if (ev.type == sf::Event::KeyPressed && ev.key.code == sf::Keyboard::T)
-		{
+		else if (ev.type == sf::Event::KeyPressed && ev.key.code == sf::Keyboard::T) {
 			PlayerHand = Brush;
 			Excavation();
 			isToolDelayActive = true;
 			toolDelayTimer.restart();
 		}
-		else if (ev.type == sf::Event::KeyPressed && ev.key.code == sf::Keyboard::Y)
-		{
+		else if (ev.type == sf::Event::KeyPressed && ev.key.code == sf::Keyboard::Y) {
 			PlayerHand = None;
 			Excavation();
 
@@ -93,10 +88,8 @@ void Fossils::UpdateTrigger(const sf::Sprite& playerSprite)
 void Fossils::Update(float time)
 {
 	//Анимации инструментов
-	if (animPickaxe_)
-	{
-		if (!directPickaxe_)
-		{
+	if (animPickaxe_) {
+		if (!directPickaxe_) {
 			// Прямая анимация
 			framePickaxe_ += time * speedTools; 
 			if (framePickaxe_ >= 4) 
@@ -109,14 +102,12 @@ void Fossils::Update(float time)
 		{
 			// Обратная анимация
 			framePickaxe_ -= time * speedTools;
-			if (framePickaxe_ <= 0)
-			{
+			if (framePickaxe_ <= 0) {
 				framePickaxe_ = 0;
 				directPickaxe_ = false;
 				currentAnimationCycle_++;
 
-				if (currentAnimationCycle_ >= 4)
-				{
+				if (currentAnimationCycle_ >= 4) {
 					animPickaxe_ = false;
 					isVisiblePickaxe = false;
 				}
@@ -127,60 +118,48 @@ void Fossils::Update(float time)
 	}
 	if (animShovel_)
 	{
-		if (!directShovel_)
-		{
+		if (!directShovel_) {
 			// Прямая анимация
 			frameShovel_ += time * speedTools;
-			if (frameShovel_ >= 4)
-			{
+			if (frameShovel_ >= 4) {
 				frameShovel_ = 2;
 				directShovel_ = true;
 			}
 		}
-		else
-		{
+		else {
 			// Обратная анимация
 			frameShovel_ -= time * speedTools;
-			if (frameShovel_ <= 0)
-			{
+			if (frameShovel_ <= 0) {
 				frameShovel_ = 0;
 				directShovel_ = false;
 				currentAnimationCycle_++;
 
-				if (currentAnimationCycle_ >= 4)
-				{
+				if (currentAnimationCycle_ >= 4) {
 					animShovel_ = false;
 					isVisibleShovel = false;
 				}
 			}
 		}
-
 		ShovelSprite.setTextureRect(sf::IntRect(88 * static_cast<int>(frameShovel_), 75, 88, 75));
 	}
-	if (animBrush_)
-	{
-		if (!directBrush_)
-		{
+	if (animBrush_) {
+		if (!directBrush_) {
 			// Прямая анимация
 			frameBrush_ += time * speedTools;
-			if (frameBrush_ >= 4)
-			{
+			if (frameBrush_ >= 4) {
 				frameBrush_ = 2;
 				directBrush_ = true;
 			}
 		}
-		else
-		{
+		else {
 			// Обратная анимация
 			frameBrush_ -= time * speedTools;
-			if (frameBrush_ <= 0)
-			{
+			if (frameBrush_ <= 0) {
 				frameBrush_ = 0;
 				directBrush_ = false;
 				currentAnimationCycle_++;
 
-				if (currentAnimationCycle_ >= 4)
-				{
+				if (currentAnimationCycle_ >= 4) {
 					animBrush_ = false;
 					isVisibleBrush = false;
 				}
@@ -192,23 +171,19 @@ void Fossils::Update(float time)
 
 
 	//Смена спрайта состоянии раскопки
-	if (shouldChangeLandPickaxe_ && landChangeTimer.getElapsedTime().asSeconds() >= 1.0f && immersionLevel_ == 3)
-	{
+	if (shouldChangeLandPickaxe_ && landChangeTimer.getElapsedTime().asSeconds() >= 1.0f && immersionLevel_ == 3) {
 		DrawLandLevel3();
 		shouldChangeLandPickaxe_ = false;
 	}
-	else if (shouldChangeLandShovel_ && landChangeTimer.getElapsedTime().asSeconds() >= 1.0f && immersionLevel_ == 2) 
-	{
+	else if (shouldChangeLandShovel_ && landChangeTimer.getElapsedTime().asSeconds() >= 1.0f && immersionLevel_ == 2)  {
 		DrawLandLevel2();
 		shouldChangeLandShovel_ = false;
 	}
-	else if (shouldChangeLandBrush_ && landChangeTimer.getElapsedTime().asSeconds() >= 1.0f && immersionLevel_ == 1)
-	{
+	else if (shouldChangeLandBrush_ && landChangeTimer.getElapsedTime().asSeconds() >= 1.0f && immersionLevel_ == 1) {
 		DrawLandLevel1();
 		shouldChangeLandBrush_ = false;
 	}	
-	else if (shouldChangeLandHand_ && landChangeTimer.getElapsedTime().asSeconds() >= 1.0f && immersionLevel_ == 0)
-	{
+	else if (shouldChangeLandHand_ && landChangeTimer.getElapsedTime().asSeconds() >= 1.0f && immersionLevel_ == 0) {
 		DrawLandLevel0(true);
 		shouldChangeLandHand_ = false;
 	}
@@ -217,30 +192,25 @@ void Fossils::Update(float time)
 
 void Fossils::Excavation()
 {
-	if (LevelSatiety > 0)
-	{
-		if (immersionLevel_ == 4)
-		{
+	if (LevelSatiety > 0) {
+		if (immersionLevel_ == 4) {
 			if (PlayerHand == Pickaxe) UsingPickaxe(true);
 			else if (PlayerHand == Shovel && EnduranceShovel > 0) UsingShovel(false);
 			else if (PlayerHand == Brush && EnduranceBrush > 0) UsingBrush(false);
 
 		}
-		else if (immersionLevel_ == 3)
-		{
+		else if (immersionLevel_ == 3) {
 			if (PlayerHand == Pickaxe && EndurancePickaxe > 0) UsingPickaxe(false);
 			else if (PlayerHand == Shovel && EnduranceShovel > 0) UsingShovel(true);
 			else if (PlayerHand == Brush && EnduranceBrush > 0) UsingPickaxe(false);
 		}
-		else if (immersionLevel_ == 2)
-		{
+		else if (immersionLevel_ == 2) {
 			if (PlayerHand == Pickaxe) UsingPickaxe(false);
 			else if (PlayerHand == Shovel) UsingShovel(false);
 			if (PlayerHand == Brush) UsingBrush(true);
-
 		}
-		else if (immersionLevel_ == 1)
-		{
+		//Подбор раскопки
+		else if (immersionLevel_ == 1) {
 			if (PlayerHand == Pickaxe) UsingPickaxe(false);
 			else if (PlayerHand == Shovel) UsingShovel(false);
 			if (PlayerHand == None) {
@@ -248,21 +218,18 @@ void Fossils::Excavation()
 				DrawLandLevel0(true);
 				immersionLevel_ = 0;
 			}
-
-			//Подбор раскопки
+			
 		}
 		LevelSatiety--;
 		DeadPlayer();
 	}
-	else
-	{
+	else {
 		DeadPlayer();
 	}
 };
 void Fossils::UsingPickaxe(bool RightTool)
 {
-	if (RightTool == true && EndurancePickaxe > 0)
-	{
+	if (RightTool == true && EndurancePickaxe > 0) {
 		isVisiblePickaxe = true;
 		animPickaxe_ = true;
 		framePickaxe_ = 0;
@@ -274,10 +241,8 @@ void Fossils::UsingPickaxe(bool RightTool)
 		DamagePickaxe(15);
 		immersionLevel_ = 3;
 	}
-	else if (RightTool == false && EndurancePickaxe > 0)
-	{
-		if (immersionLevel_ == 3)
-		{
+	else if (RightTool == false && EndurancePickaxe > 0) {
+		if (immersionLevel_ == 3) {
 			isVisiblePickaxe = true;
 			animPickaxe_ = true;
 			framePickaxe_ = 0;
@@ -286,10 +251,8 @@ void Fossils::UsingPickaxe(bool RightTool)
 
 			DamagePickaxe(25);
 			DrawLandLevel4();
-			//Broken = true;
 		}
-		else if (immersionLevel_ < 3)
-		{
+		else if (immersionLevel_ < 3) {
 			isVisiblePickaxe = true;
 			animPickaxe_ = true;
 			framePickaxe_ = 0;
@@ -299,14 +262,12 @@ void Fossils::UsingPickaxe(bool RightTool)
 			DamagePickaxe(25);
 			DrawLandLevel0(false);
 		}
-
 	}
 	Hand PlayerHand = None;
 }
 void Fossils::UsingShovel(bool RightTool)
 {
-	if (RightTool == true && EnduranceShovel > 0)
-	{
+	if (RightTool == true && EnduranceShovel > 0) {
 		isVisibleShovel = true;
 		animShovel_ = true;
 		frameShovel_ = 0;
@@ -318,10 +279,8 @@ void Fossils::UsingShovel(bool RightTool)
 		DamageShovel(20);
 		immersionLevel_ = 2;
 	}
-	else if (RightTool == false && EnduranceShovel > 0)
-	{
-		if (immersionLevel_ < 3)
-		{
+	else if (RightTool == false && EnduranceShovel > 0) {
+		if (immersionLevel_ < 3) {
 			isVisibleShovel = true;
 			animShovel_ = true;
 			frameShovel_ = 0;
@@ -330,15 +289,12 @@ void Fossils::UsingShovel(bool RightTool)
 
 			DamageShovel(30);
 			DrawLandLevel0(false);
-			//Broken = true;
 		}
-
 	}
 }
 void Fossils::UsingBrush(bool RightTool)
 {
-	if (RightTool == true && EnduranceBrush > 0)
-	{
+	if (RightTool == true && EnduranceBrush > 0) {
 		isVisibleBrush = true;
 		animBrush_ = true;
 		frameBrush_ = 0;
@@ -350,8 +306,7 @@ void Fossils::UsingBrush(bool RightTool)
 		DamageBrush(30);
 		immersionLevel_ = 1;
 	}
-	else if (RightTool == false && EnduranceBrush != 0)
-	{
+	else if (RightTool == false && EnduranceBrush != 0) {
 		isVisibleBrush = true;
 		animBrush_ = true;
 		frameBrush_ = 0;
@@ -370,15 +325,13 @@ void Fossils::TakeBones()
 void Fossils::draw(sf::RenderWindow& window)
 {
 	window.draw(LandSprite);
-	if (isVisiblePickaxe)
-	{
+	if (isVisiblePickaxe) {
 		window.draw(PickaxeSprite);
 	}
 	if (isVisibleShovel) {
 		window.draw(ShovelSprite);
 	}
-	if (isVisibleBrush) 
-	{
+	if (isVisibleBrush) {
 		window.draw(BrushSprite);
 	}
 };

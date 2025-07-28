@@ -55,29 +55,23 @@ Menu::Menu()
 }
 void Menu::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
-	if (event.type == sf::Event::MouseButtonPressed)
-	{
-		if (event.mouseButton.button == sf::Mouse::Left) 
-		{
+	if (event.type == sf::Event::MouseButtonPressed) {
+		if (event.mouseButton.button == sf::Mouse::Left) {
 			//позицию клика
 			sf::Vector2i mousePos = sf::Mouse::getPosition(window);
 			//координаты окна
 			sf::Vector2f windowPos = window.mapPixelToCoords(mousePos);
 
-
-			if (NewGameIcon.getGlobalBounds().contains(windowPos))
-			{
+			if (NewGameIcon.getGlobalBounds().contains(windowPos)) {
 				Game.NewGame();
 				checkBase_ = true;
 				isLose = false;
 			}
-			else if (ContinueGameIcon.getGlobalBounds().contains(windowPos))
-			{
+			else if (ContinueGameIcon.getGlobalBounds().contains(windowPos)) {
 				Game.LoadGame();
 				checkBase_ = true;
 			}
-			else if (ExitGameIcon.getGlobalBounds().contains(windowPos))
-			{
+			else if (ExitGameIcon.getGlobalBounds().contains(windowPos)) {
 				window.close();
 			}
 		}
@@ -104,8 +98,7 @@ void Menu::draw(sf::RenderWindow& window, sf::View GameView, sf::View UIView)
 
 	window.draw(ExitGameIcon);
 	window.draw(ExitGameText);
-	if (isLose) 
-	{
+	if (isLose) {
 		window.draw(LoseText);
 	}
 	
